@@ -73,6 +73,8 @@ Facilidade de aprendizado
 1. Pragmática (metas do fazer, motivação/razão)(conteúdo, funcionalidade, apresentação).
 2. Hedônica (metas do ser, sensação/sentimento/ idedntificação).
 
+> Hassenzahl (2003) propôs uma abordagem que diferencia UX da usabilidade tradicional. Nesta abordagem, o autor define que a UX avalia o produto interativo sob duas perspectivas: os atributos pragmáticos e hedônicos. Um produto pode ser percebido como pragmático porque fornece meios eficazes e eficientes para os manipular. Além disso, o produto pode ser percebido como hedônico porque fornece estímulo, identificação ou desperta memórias em seus usuários. Assim, a UX engloba todos os aspectos da interação com um produto.
+
 ### UX é abrangente e longitudinal
 - Abrangente: vai além da interface, vários pontos de contato (marketing, loja, manual, instalação, suporte, descarte, etc)
 - Longitudinal: momentos, uso ao longo do tempo. (antecipação, primeiro uso, uso esporádico, uso continuado). 
