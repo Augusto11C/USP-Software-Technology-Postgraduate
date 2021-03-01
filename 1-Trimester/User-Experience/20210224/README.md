@@ -1,21 +1,26 @@
 # Interface e interação
 *Interfaces*: **é o que há no limite entre duas fases de um sistema heterogêneo**. Sistema humano / sistema computacional (conversam pela interface).
 
-*Interação*: ato de comunicação. (utiliza linguagem artificial)
+A IU - Interface de usuário - é o suporte computacional pelo qual o usuário aciona as funções do sistema e dele recebe informações necessárioas para suas tarefas.
+
+A interface tem elementos de hardware e software.
+
+*Interação*: ato de comunicação entre um sistema computacional e um ser humano. Interação utiliza linguagem artificial.
+
 Linguagem artificial: possui elementos léxicos, sintáticos e semânticos.
 
 Por ser artifical, **necessita de design**. Portanto, O que é 'design' de 'linguagem artificial'?
 - É o processo de criar formas, funções, serviços de forma a torná-los adequados às necessidades dos usuários. 
 
 ## Léxico, sintático, semântico
-- Léxico: símbolos com siginificados. 
-- Sintaxe: validade na ação.
+- Léxico: símbolos com siginificados. (Ex.: Simbolo de notificação de msg)
+- Sintaxe: validade na ação. (Ex.: Icone de lixeira não clicável em um carrinho de compras vazio)
 - Semântico: significado da ação.
 
 ## Perspectiva de interação
-- sistema (computador/maquina);
-- parceiro de discurso (responsivo [interação linguistica?]);
-- mídia é o meio, comunicação (texto, audio, video);
+- sistema: Usuário como computador (computador/maquina);
+- parceiro de discurso: Computador como pessoa (responsivo [interação linguistica?]);
+- mídia: computador como o meio, comunicação (texto, audio, video);
 - ferramenta utilização como instrumento para realizar tarefas. 
 
 ## Affordances
@@ -26,20 +31,21 @@ Por ser artifical, **necessita de design**. Portanto, O que é 'design' de 'ling
   - Formulação de um modelo mental do que é o objeto, suas características e modo de funcionamento, por meio de exploração tentativa e erro, até que o modelo seja plenamente consistente.
 - Restrições
   - São limitações impostas pelo objeto ao uso – físicas, lógicas ou culturais. São aprendidas pelo uso e exploração as limitações.
-- *Affordances* 
+- **Affordances**
   - Característica que indica como deve ser utilizado. 
 
 ## Qualidade na Interação
+> como designer eu quero embutir essas qualidades em meu sistema
 ISO 8402 características que satisfazem as necessidades explícitas e implícitas. Conceito relativo (usuários) e dinâmico (evolução).  
 
-- déc. 40-50: adequação funcional e disponibilidade, baixa qualidade;
-- déc. de 60: utilidade (desempenhar funções) e desempenho; 
-- déc. 70: inteligibilidade, interoperabilidade e confiabilidade da operação; 
-- déc. 80: novos usuários, computação pessoal + interfaces gráficas, ideia de usabilidade →  eficácia, eficiência e satisfação; 
+- déc. 40-50: adequação funcional e disponibilidade, baixa qualidade (muitas falhas e resultados obtivos além da janela de tempo permitida);
+- déc. de 60: utilidade (desempenhar funções) e desempenho (mais rapido que as ações manuais, por exemplo); 
+- déc. 70: inteligibilidade, interoperabilidade e confiabilidade da operação (fazer sentido, conseguir cumprir as tarefas e confiar naquilo que está operando); 
+- déc. 80: novos usuários, computação pessoal + interfaces gráficas, ideia de **usabilidade →  eficácia, eficiência e satisfação;**
 - déc. 90: Nielsen, usabilidade, 5 elementos, 1. facilidade de aprendizado, 2. eficiência, 3. facilidade de memorizar, 4. baixa taxa de erros, 5. satisfação subjetiva; 
-- final déc. 90: introdução da web, ligação entre criação e consumo de conteúdo, → comunicabilidade, navegabilidade, facilidade de encontrar coisas;
+- final déc. 90: introdução da web que faz a mediação entre quem faz criação e consumo de conteúdo, → comunicabilidade, navegabilidade, facilidade de encontrar coisas;
 - Anos 2000: portabilidade, responsividade, acessibilidade, sensibilidade a contexto e jogabilidade; 
-- déc. 2k10: qualidade = interação multidimensional, ISO 25010 → capacidade de reconhecimento, facilidade de aprendizado, operabilidade, proteção contra erro do usuário, estética da interface, acessibilidade. 
+- déc. 2k10: qualidade = interação multidimensional, ISO 25010 → capacidade de reconhecimento, facilidade de aprendizado, operabilidade, proteção contra erro do usuário, estética da interface, acessibilidade. a ISO 25010 também quem as "QUALIDADES EM USO", sistemas diferentes colocados em contextos diferentes podem ter qualidades diferentes
 
 ## Usabilidade
 Usabilidade é uma característica de qualidade dos sistemas interativos, que permite proporcionar ao usuário uma experiência de uso positiva.
@@ -65,7 +71,7 @@ Facilidade de aprendizado
    - O usuário deve relatar uma sensação positiva com o uso.
 
 ## UX - User Experience
-- Qualidade da interação, perspectiva diferente. 
+- Também é uma qualidade da interação, perspectiva diferente. 
 - Consequências emocionais e cognitivas decorrentes da interação.
 - Diferença: experiência → do usuário (percepção) vs. usabilidade → da aplicação. 
 
