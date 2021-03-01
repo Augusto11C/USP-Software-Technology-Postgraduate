@@ -81,3 +81,6 @@ Facilidade de aprendizado
 - Difícil/fácil de usar, péssima/boa expericência.
 - Usabilidade → intrínseco do produto.
 - UX → perspectiva individual.
+
+> Experiência do Usuário é um conjunto de disciplinas que compreende usabilidade e também muitas outras áreas, como arquitetura de informação, design de interação, design de interface, estratégia de conteúdo, gerenciamento de projeto e até métricas.
+> Já usabilidade é um “atributo de qualidade para avaliar a facilidade de uso de uma interface”, segundo Jakob Nielsen. É, portanto, uma parte da experiência do usuário, mas não é tudo. Um produto pode ter uma boa usabilidade mas não ser muito útil. Teste de usabilidade é um método de avaliação de usabilidade que envolve pesquisa com usuários.
