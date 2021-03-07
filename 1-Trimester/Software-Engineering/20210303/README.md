@@ -3,18 +3,18 @@
 ## Definição de Processos (ISO, 2017)
 Conjunto de atividades inter-relacionadas ou interagindo que transforma entradas em saída
 
-- O processo pode ter um objetivo
-- Importância do valor da saída para a organização
-- Um processo tem um cliente
-- Pode cruzar fronteiras organizacionais
+- O processo pode ter um **objetivo**
+- Importância do **valor** da saída para a organização
+- Um processo tem um **cliente**
+- Pode cruzar **fronteiras** organizacionais
 
 ## Processo 
 Quais são os elementos de um processo? Como descrevê-lo?
-`>>> BPMN é uma sintaxe concreta/notação <<<`
-`>>> PMBOK corpo de conhecimento, mais abrangente, conceitos genéricos<<<`
-`>>> SCAMPI <<<`
-`>>> SCRUM é um framework gerencial <<<`
-
+```
+>>> BPMN é uma sintaxe concreta/notação <<<
+>>> PMBOK corpo de conhecimento, mais abrangente, conceitos genéricos<<<
+>>> SCRUM é um framework gerencial <<<
+```
 - etapas, atividades, tarefas
 - duração
 - entrada
@@ -29,10 +29,11 @@ Quais são os elementos de um processo? Como descrevê-lo?
 
 Uma pessoa pode acumular vários papeis dentro de um processo
 
-Para algumas situações um processo se sai melhor que outro. Qual é o melhor sempre depende do contexto que ele será inserido.
+Para algumas situações um processo se sai melhor que outro. Qual é o melhor processo, sempre depende do contexto que ele será/está inserido.
 
 ### Os processos serão sempre iguais? 
 **Não**
+
 Algumas influências:
 - Tamanho do projeto
 - Complexidade do software
@@ -44,7 +45,8 @@ Algumas influências:
 - Contrato/Questões legais
 
 ### Quem decide como será o processo?
-Algumas variáveis a considerar
+
+Algumas variáveis a considerar:
 - Cultura organizacional
 - Modelo de ciclo de vida: iterativo, incremental, cascata...
 - Processos de desenvolvimento: RUP, XP, UP
@@ -59,6 +61,7 @@ Algumas variáveis a considerar
 - escopo
 - retrabalho
 - desmotivação
+- excesso de burocracia
 
 ## Desenvolvimento de Software
 
@@ -75,12 +78,21 @@ Alguns Elementos de um sistema:
 - Processos
 - Serviços
 - Instalações
+- Materiais
+- Entidades naturais (água, organizmos e minerais)
 
 O desenvolvimento de software é um dos processos do desenvolvimento de um sistema.
 
-### Em uma empresa que trabalha com software O desenvolvimento é o único processp? Quais são esses outros processos?
+### Em uma empresa que trabalha com software o desenvolvimento é o único processo? Quais são esses outros processos?
+**Não, existem muitos outros processos envolvidos**, e uma norma que tenta descrever alguns processos envolvidos é a ISO 12207
 
-Answer: **ISO 12207**
+Alguns exemplos de processos:
+- Processo de contratação de pessoas
+- Treinamento
+- Processos de áreas de suporte (RH, Marketing etc)
+- Gerência 
+
+
 ## ISO 12207
 - Define um quadro de referência para os processos de software
 	- Terminologia básica: comunicação
@@ -88,36 +100,88 @@ Answer: **ISO 12207**
 		- Adquirentes, fornecedores e outros stakeholders
 		- base para a melhoria de processos
 
-- Especifica para cada processo
-	- propósito
-	- resultados
-	- atividadeds e tarefas
+- Especifica/Responde para cada processo as perguntas abaixo
+	- Quais os propósitos do processo?
+	- Quais os resultados que deseja-se obter?
+	- Quais as atividadeds e tarefas envolvidas?
+	- **PS: A ISO 12207 não da os "detalhes" de como executar o processo, apenas uma visão geral. É uma referencia**
 
 - Não especifica
 	- Modelos de ciclo de vida, metodos, ferramentas, tecnicas ou documentos
+	
 - Necessário instanciar os processos na organização
 	- Adição e remoção de atividades e tarefas
-	- TODO: Slide 16
+	- alteração da ordem definida
+	- análise da necessidade dos processos
 
+### Processos definidos na ISO 12207
+- Processos de acordo
+  - **Estabelecem acordo entre organizações**
+    - Processos de aquisição 
+    - processos de fornecimento 
+
+- Processos organizacionais habilitadores do projeto
+  - Proveem os recursos que permitem que o projeto atenda as necessidades e expectativas dos stakeholders
+  - Processos que a empresa precisa ter para permitir que existam processos de criação/desenvolvimento/manutenção de software
+    - Processos de gerência do modelo de ciclo de vida (processo que cuida dos processos que a empresa usa, como quais processos, ferramentas, frameworks, métodos que serão utilizados)
+    - processo de gerência de infraestrutura
+    - processo de gerência de recursos humanos
+    - processo de gerência de portfólio
+    - processo de gerência da qualidade
+    - processo de gerência do conhecimento 
+
+- Processos de gerenciamento técnico
+  - Basicamente são os processos de gestão de projetos. O gestor participa/faz vários dos processos descritos abaixo
+  - Gerenciam os recursos e ativos alocados pela gestão da organização
+  - Aplicam os recursos e ativos para atingir o que foi acordado
+    - Processo de planemento do projeto
+    - Processo de avaliação e controle de projeto 
+    - Processo de gerência de decisão
+    - Processo de gerência de risco
+    - Processo de gerência de configuração
+    - Processo de gerência de informação
+    - Processo de medição
+    - Processo de garantia da qualidade
+
+- Processos técnicos
+  - tratam das ações técnicas durante o ciclo de vida do projeto
+    - processo de análise de negócio ou da missão
+    - processo de definição das necessidades erequisitos dos stakeholders
+    - processo de análise de requisitos de sistema/software
+    - processo de definição da arquitetura
+    - processo de definição do design
+    - processo de análise de sistema
+    - processo de implementação
+    - processo de integração
+    - processo de verificação
+    - processo de transição
+    - processo de validação
+    - processo de operação
+    - processo de manutenção
+    - processo de descarte
 ## Processos de desenvolvimento
-- Atividades clássicas
-definição e analise de requisitos
-- levantar os requisitos do software
-- refinar e estrutar os requisitos
+### Nomeclatura Professor
+- Atividades "clássicas"
 
-projeto 
+Definição e analise de requisitos
+  - levantar os requisitos do software
+  - refinar e estrutar os requisitos
+
+Projeto 
 - projetor como o software deve fazer o que foi requisitado
 
-implementação 
+Implementação 
 - criar o software
-- processo de testes de unitade
+- criar e executar os testes de unitade
 
 Teste
-TODO
+- executar o software criado em busca de defeitos
 
 Implantação
-TODO
+- Colocar o software no ambiente real
 
+### Nomeclatura ISO 12207
+![](./resources/12207-processos-de-desenvolvimento-nomeclatura.png)
 ## Processos técnicos - Modelos de ciclo de vida
 São como frameworks
 
@@ -126,32 +190,58 @@ São como frameworks
 	- uma atividade só começa quando a anterior termina
 	- resultado de cada atividade é aprovado
 - o software é entregue uma vez, no final.
+
+![](./resources/cascata-flow-exemplo.png)
 #### Vantagens
-	- TODO 
+- Diminui esforço de gestão - cronogramas simples, etc
+- Modelo simples - facil entender as atividades e explicar 
 
 #### Problemas
-	- Comunicação entre as atividades
-	- Cliente só vê o software no final
-
-
+- Comunicação entre as atividades
+- Cliente só vê o software no final
+- defeitos demoram para aparecer
+- custo maior para corrigir erros
+  - alteração afeta outras partes do software
+  - indisponibilidade da equipe original
+- requisitos ficam congelados, mas o ambiente de negócio muda...
+- as últimas atividades sofrem com o atraso
 
 ### Modelo Iterativo e Incremental
 - software construido aos poucos
+- cada fase entrega parte do software
+  - software é entregue com mais frequência
 
-#### Vantagens
-- software é entregue com maior frequencia
-- prioriza o desenvolvimento
-- as últimas atividades não sofrem tanto com o atraso
-	- mas os últimos incrementos sofrem TODO...
+![](./resources/iterativo-incremental-flow-exemplo.png)
 
-#### Problema
-- atraso nos últimos incrementos
-- não lida com mudanças nos re
+#### Modelo Incremental
+- O modelo incremental o software é construido em pedaços. Cada incremento entrega um conjunto de requisitos
+- Vantagens:
+  - Prioriza o desenvolvimentos
+  - ultimas atividades não sofrem com atraso, mas os ultimos incrimentos sofrem
+- Problema:
+  - Pode haver atrasos nos ultimos incrementos
+  - não lida com mudanças nos requisitos, pois as partes já criadas não são corrigidas (=cascata) 
+![](./resources/incremental-flow-exemplo.png)
+
+#### Modelo Iterativo
+- Cada interação **revisa** e **melhora** o software
+- participação do cliente
+- Vantagens:
+  - lida naturalmente com mudanças nos requisitos
+  - o ambiente de negócio muda
+  - o entendimento do software é melhorado
+- Problema:
+  - retrabalho
+  - primeiras versões têm diversos problemas
+  - não prioriza as funcionalidades
+  - importância de uma boa arquitetura
+  - refinamento infinito
+![](./resources/iterativo-flow-exemplo.png)
 
 
-#### Qual a direfença do modelo iterativo e incremental?
-- Modelo incremental o software é construido em pedaços. Cada incremento entrega um conjunto de requisitos
-
+#### Exemplo
+![](./resources/modelo-iterativo-incremental-exemplo.png)
+### Cascata vs Incremental vs Iterativo vs Iterativo-Incremental
 
 Cascata - Projetos pequenos
 
@@ -161,9 +251,12 @@ Iterativo - Projeto pequeno com requisitos não tão claros
 
 Iterativo e Incremental - Bala de prata/resposta genérica
 
+![](./resources/comparacao-cascata-iterativo-incremental-iterativo_incremental.png)
 
 ## Cascata X Agil, Faz sentido essa comparação?
-- No comparar, cascata é só um modelo de ciclo de vida, então não faz sentido comparar com ágil
+- No comparar, cascata é só um modelo de ciclo de vida, então não faz sentido comparar com ágil.
+- Ágil é um conjunto de abordagens que usam o modelo iterativo e incremental
+
 
 
 
