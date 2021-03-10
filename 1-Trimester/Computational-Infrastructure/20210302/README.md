@@ -170,4 +170,60 @@ Objetivo: Propor diretrizes estratégicas e planos para administração eficaz e
 - O site pode ser preparado após o incidente 
 - recuperação de dados pode ser através de fitas
 mantidas fora do site
-## Redes
+
+# Redes
+
+## Camada Física
+- A camada física cuida dos meios de transmissão de dados
+- Transmissão transparente de sequências de bits pelo meio físico
+
+- A transmissão envolve
+ - meio para transferência
+ - capacidade de transferência
+ - latência para a transferência
+
+- Contém os padrões elétricos, mecânicos (ex: tipo de conector), física (ex: níveis de tensão), funcionais das interfaces e tipo de transmissão (ex: analógica/digital, tipo de modulação)
+
+### Classificações das Conexões
+- ponto a ponto: Conexões ponto a ponto ligam fisicamente dois nós
+- multiponto: Conexões multiponto ligam mais de dois nós através de um meio compartilhado
+    - As conexões multiponto apresentam o problema adicional de decisão sobre qual nó pode transmitir num certo instante
+
+### Generalidades sobre Cabos
+Cabos podem ser elétricos ou ópticos
+
+**Cabos comuns:**
+- são revestidos por plástico combustível, que gera produtos
+venenosos em caso de incêndio
+
+**Cabos plenum**
+- Devem ser utilizados onde existe risco de incêndio: plenum,
+prumadas
+- São mais caros e rígidos
+
+**Cabos externos**
+- Possuem proteção contra agentes atmosféricos
+- Possuem guia de aço ou plástico rígido, para serem autoportantes
+- Muito rígidos
+
+## Camada de Enlace (Data Link Layer)
+
+## Camada de transporte
+- transmissão confiável entre dois nós (os nós não estão necessáriamente conectados diretamente)
+
+## Camada de aplicação
+
+
+## Modelo OSI x Protocolos OSI
+- O modelo OSI é bem pensado
+- Devido á sua complexidade
+
+
+## Modelo de referência TPC/IP
+- Formula uma hipótese de que a rede não é confiável
+
+application 
+transport ~ tcp
+internet ~ ip
+host-to-network
+
