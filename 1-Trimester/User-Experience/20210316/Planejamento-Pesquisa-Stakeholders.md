@@ -70,43 +70,53 @@ ou de um grupo social relevante ao trabalho.
 ### Tipo de perguntas
 
 ### Múltipla escolha
-> Quais atividades você realiza durante a semana?
+```
+Quais atividades você realiza durante a semana?
 > [ ] email
 > [ ] leitura de notícias
 > [ ] rede sociais
 > [ ] pesquisas gerais
 > [ ] estudo
+```
 
 ### Faixas de valores 
-> Qual a sua idade?
+```
+Qual a sua idade?
 > () abaixo de 21
 > 21-30
 > 31-40
 > 41-50
 > acima de 50
+```
 
 ### Escala de Likert
-> É fácil encontrar o produto desejado navegando pelas seções do site?
+```
+É fácil encontrar o produto desejado navegando pelas seções do site?
 > ( ) Concordo plenamente
 > ( ) concordo parcialmente
 > ( ) não concordo nem discordo
 > ( ) discordo parcialmente
 > ( ) discordo totalmente
+```
 
 ### Escala de diferenciais semânticos (atitudes bipolares)
+```
 Selecione o valor que corresponde a sua opinião sobre a página do produto do site:
 > atraente () () () () () feita
 >   clara  () () () () () confusa
 >   útil   () () () () ()
+```
 
 ### Escala  de diferenciais semânticos (nível/grau)
-> Indique o grau de importância de cada um dos motivos abaixo o na sua decisão de
+```
+Indique o grau de importância de cada um dos motivos abaixo o na sua decisão de
 trabalhar: (Atenção: 0 indica nenhuma importância e 5 maior importância.)
 Ajudar nas despesas com a casa                     (0 – 1 – 2 – 3 – 4 – 5)
 Sustentar minha família (esposo/a, filhos/as etc.) (0 – 1 – 2 – 3 – 4 – 5)
 Ser independente (ganhar meu próprio dinheiro)     (0 – 1 – 2 – 3 – 4 – 5)
 Adquirir experiência                               (0 – 1 – 2 – 3 – 4 – 5)
 Custear/ pagar meus estudos                        (0 – 1 – 2 – 3 – 4 – 5)
+```
 
 
 
