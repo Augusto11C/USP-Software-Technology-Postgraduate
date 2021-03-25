@@ -3,6 +3,9 @@
 ## To Study
 - Problema da Parada 
 	- Teoria onde se diz que não é possivel determinar se um programa termina ou não
+- Agile Software Development, Principles, Patterns, and Practices by Robert C. Martin 
+- [Mocks Aren't Stubs by Martin Fowler](https://martinfowler.com/articles/mocksArentStubs.html)
+- [TestDouble by Martin Fowler](https://martinfowler.com/bliki/TestDouble.html)
 
 ## Implementação
 Responsabilidades:
@@ -189,5 +192,4 @@ Alguns tipos de teste:
 
 ### Teste de Aceitação
 - verifica a espectativa dos stakeholder
-
 
