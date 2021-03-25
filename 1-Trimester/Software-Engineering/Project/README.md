@@ -22,3 +22,10 @@ Microserviços
 
 ### Final Date
 **Quarta, 5 Mai 2021, 23:59**
+
+- [Google Scholar - Clean Architecture Search](https://scholar.google.com/scholar?start=40&q=clean+architecture+software+Robert+Martin&hl=en&as_sdt=0,5)
+- [Refactoring with Clean Architecture](http://courses.cecs.anu.edu.au/courses/CSPROJECTS/19S2/reports/u6052043_report.pdf)
+- [Towards a Clean Architecture](http://courses.cecs.anu.edu.au/courses/CSPROJECTS/19S1/reports/u6022913_report.pdf)
+- [An Introduction to Clean Software Architecture](https://pivanics.users.cs.helsinki.fi/portfolio/docs/publications/Peter_Ivanics-Clean_Software_Architecture.pdf)
+- [Design Principles](http://staff.cs.utu.fi/staff/jouni.smed/doos_06/material/DesignPrinciplesAndPatterns.pdf)
+- [Software Architecture](https://sci-hub.do/10.1145/1810295.1810435)
