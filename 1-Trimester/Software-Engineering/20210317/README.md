@@ -17,34 +17,36 @@
 	- em geral há uma preocupação com os **requisitos não funcionais**
 	- "O sistema tem uma arquitetura"
 	```
-	Conceitos ou propriedades fundamentais de um sistema em seu ambiente, encarnadas em seus elementos,
-	relações e nos princípios de seu projeto e evolução (ISO, 2011)
+	Conceitos ou propriedades fundamentais de um sistema em seu ambiente, encarnadas em seus elementos, relações e nos princípios de seu projeto e evolução (ISO, 2011)
 	```
+- é uma **abstração**
+- em geral há uma preocupação com os RNFs
 - O **Design** considera a arquitetura, vai no detalhe. Projeta uma solução considerando a arquitetura
 
 ## Importancia de Arquitetura de Software
-- Permite ou restringe características de qualidade
-- Permite predizer a qualidade do sistema
-- **Restringe o _design_ e a implementação**
+- permite ou restringe características de qualidade
+- permite predizer a qualidade do sistema
+- **restringe o _design_ e a _implementação_**
     - Encaminha decisões de design
-    - Como o sistema será distribuído?
-    - Como o sistema será estruturado?
-    - Como os componentes do sistema serão decompostos?
-    - Qual a melhor organização para tratar dos RNF?
-    - Existe alguma arquitetura genérica que pode ser usada como base?
-- Permite incorporar componentes desenvolvidos independentemente	
-- Ajuda a pensar sobre mudanças
+      - Como o sistema será distribuído?
+      - Como o sistema será estruturado?
+      - Como os componentes do sistema serão decompostos?
+      - Qual a melhor organização para tratar dos RNF?
+      - Existe alguma arquitetura genérica que pode ser usada como base?
+- permite incorporar componentes desenvolvidos independentemente	
+- ajuda a pensar sobre mudanças
 - melhora estimativas de custo e tempo
 - influencia a divisão do trabalho
 - melhora a comunicação com stakeholders
 
-> De forma geral o objetivo de uma boa arquitetura é minimizar o custo (em toda a vida do software) e maximizar a produtividade (Martin, 2017 )
+> De forma geral o objetivo de uma boa arquitetura é minimizar o custo (em toda a vida do software) e maximizar a produtividade (Martin, 2017)
 
 ## Como Representar a Arquitetura de Software?
-TODO pegar print com balões (video) slide 7
 > Dificilmente um único diagrama conseguiria representar tudo e ser fácil de ler e manter (Pfleeger e Atlee, 2010)
 
-TODO Pegar no video diferença entre diagrama e desenho(?)
+**Diagrama vs Modelo**
+- A partir de um modelo, podemos criar vários diagramas
+- Modelo é a representação simplificada de uma realidade
 
 Uso de descrições arquiteturais (ISO, 2011):
     - Base para as atividades de design e implementação
@@ -55,46 +57,43 @@ Uso de descrições arquiteturais (ISO, 2011):
     - Guia para o suporte da operação e da infraestrutura
     - Suporte para o planejamento, incluindo prazos e custos
 
-## Visão - Arquitetura possui várias Facetas
-- A descrição da arquitetura inclui várias visões
-- Representação da arquitetura na perspectiva de um conjunto de preocupações (ISO, 2011)
+## Visão - Arquitetura Possui Várias Facetas
+- A descrição da arquitetura inclui várias **visões**
+- Representação da arquitetura na perspectiva de um conjunto de **preocupações** (ISO, 2011)
 	- preocupações dos stakeholders
 - Exemplo: visões na engenharia civil 
 	- Encanamento, fiação elétrica, planta...
 
-Visões podem ser definidas para o projeto ou pode-se usar um framework
-- Arcabouço de Zachman: trata da arquitetura empresarial
-- RM-ODP: padrão para sistemas distribuídos e abertos
-- Modelo 4+1: modelo OO (UML)
+- Visões podem ser definidas para o projeto ou pode-se usar um framework
+  - Arcabouço de Zachman: trata da arquitetura empresarial
+  - RM-ODP: padrão para sistemas distribuídos e abertos
+  - Modelo 4+1: modelo OO (UML)
 
 ## Padrões de Arquitetura
+- Padrões: essência de soluções que podem ser usados em problemas semelhantes
 - o padrão "captura" a essência de uma solução que podem ser usados em problemas semelhantes
 	- capturam a experiência
 - Linguagem basica ---> "a conversa entre os devs fica mais facil" 
 - Exemplo
-	- Modelo em camadas
-	- Model-View-Controller (MVC)
-	- Dutos e filtros (pipes and filters)
-	- Proxy
+  - Modelo em camadas
+  - Model-View-Controller (MVC)
+  - Dutos e filtros (pipes and filters)
+  - Proxy
 
 ## Na prática
-Todo software possui uma arquitetura?
+**Todo software possui uma arquitetura?**
 - Sim! Mas nem sempre ela foi adequadamente projetada e nem sempre ela é adequada
 
-É fácil mudar uma arquitetura?
-TODO pegar no video
-
-É necessário representar a arquitetura?
-- Não necessariamente, as vezes pode existir uma arquitetura padrão (por meio do framework, ou do estilo já adotado pela empresa) que faça com que p entendimento já esteja implicito.
+**É necessário representar a arquitetura?**
+- Não necessariamente, as vezes pode existir uma arquitetura padrão (por meio do framework, ou do estilo já adotado pela empresa) que faça com que o entendimento já esteja implicito.
 
 ### Representação em métodos ágeis
-Representação em métodos ágeis
 - A arquitetura deve emergir
-	- (Mas é difícil mudar após tomar decisões importantes)
+  - (Mas é difícil mudar após tomar decisões importantes)
 - Em casos simples não é necessário representar
-	- Software arquiteturalmente comum
-	- Arquitetura e decisões pré-definidas
-Discussão entre desenvolvedores
+  - Software arquiteturalmente comum
+  - Arquitetura e decisões pré-definidas
+- Discussão entre desenvolvedores
 - Divulgação para o time (e para os mantenedores)
 	- Não precisa ser um documento formal
 - Decisões arquiteturais devem ser documentadas
@@ -104,21 +103,23 @@ Discussão entre desenvolvedores
 
 # Projeto (Design)
 
+```
 Arquitetura -------------> Design
+```
 
 ## Objeto
 > Prover dado e informação suficientemente detalhados sobre o sistema e seus elementos para permitir a implementação consistente com as entidades arquiteturais (ISO, 2017)
 
 
 - Atividade **extremamente** técnica
-	- Conhecimento dos requisitos, da arquitetura, do código e dos testes
-	- Proficiência em
-		- Linguagem de programação
-		- Frameworks e bibliotecas
-		- Tecnologias em geral
-		- Conceitos, princípios e padrões de design
+  - Conhecimento dos requisitos, da arquitetura, do código e dos testes
+  - Proficiência em
+  	- Linguagem de programação
+    - Frameworks e bibliotecas
+  	- Tecnologias em geral
+	- Conceitos, princípios e padrões de design
 
-## Design e 
+## Design
 Cada abordagem trata o projeto de maneira diferente
 - Ex: Extreme Programming
 	- Várias práticas apoiam o Projeto
@@ -126,21 +127,24 @@ Cada abordagem trata o projeto de maneira diferente
 	- Tradicionalmente é feita diretamente no código
 
 Algumas abordagens sugerem o uso de **modelos**
-- TODO o que é modelo? Pegar no vídeo
-	- Mesmo abordagens ágeis
-	- 
+  - Mesmo abordagens ágeis
+  - Permitem simplificar a comunicação e facilitam pensar sobre a solução
+  - DDD, UP, FDD
 
-## Projetos dirigidos por modelos
+### Projetos dirigidos por modelos
 **Quais os problemas de usar modelos no design?** 
-- Diferença entre o modelo e o código
-- manutenção (do modelo)
+- diferença entre o modelo e o código
+- **manutenção** (do modelo)
+  - o modelo é custoso para se manter
 - é uma abstração
+  - a abstração do modelo as vezes não tem implementação viável 
+  - dificil de ver como essa abstração se representa no código
 - dificuldade de juntar diversas visões
-- Linguagem específica
+- finguagem específica
 	- apesar de mais simples que o código
 
 ## Paradigma
-- Em geral o projeto (ou parte dele) condidera um paradigma de programação
+- Em geral o projeto (ou parte dele) considera um paradigma de programação
 - **O paradigma influencia a arquitetura e, principalmente, o design**
 - Definição dos requisitos é conceitualmente independente de paradigma
 	- ela pode ser feita independente de paradigma
@@ -161,16 +165,54 @@ Algumas abordagens sugerem o uso de **modelos**
 	- Linguagens: C++, C#, Java, Objective-C, Ruby
 - Algumas linguagens são multiparadigma
 
-### Qual paradigma seguir?
-DEPENDE DO PROBLEMA!!
+### Qual Paradigma Seguir?
+- **DEPENDE DO PROBLEMA!!**
 - a solução é influenciada pelo paradigma
 	- facilidade/dificuldade de representação
+
 - paradigma escala mais fácil by Fabio Levy
 	- Pois não tem estado, com isso temos um improviment para aplicar mais paralelismo
-- TODO pegar no video slide 22
-- TODO pegar imagem slide 23
+
 
 ## Projeto OO
+- Foco nos **conceitos** do domínio do problema
+  - sw é decomposto em conceitos
+  - dados e funções são organizados por conceitos
+    - dados ficam escondidos
+  - instâncias dos conceitos colaboram para executar uma função do software
+
+### Classes
+- Conceitos são representados como classes
+  - Definem um novo **tipo**
+  - São instanciadas ("materializadas") em objetos
+  
+![](./resources/classes-e-objetos.png)
+![](./resources/conjunto-objetos-fluxo-ex.png)
+
+- Classes definem estrutura e comportamento comum para um conjunto de objetos
+- **Estrutura**: Atributos
+  - propriedade dos objetos
+  - definem o estado do objeto
+  ![](./resources/classe-atributos.png)
+  ![](./resources/classe-atributos-def.png.png)
+
+
+- **Comportamento**: operações
+  - Serviços disponibilizados pelos objetos
+  ![](./resources/classe-comportamento.png)
+
+![](./resources/classes-slide.png)
+
+
+### Relacionamento
+![](./resources/relacionamento-slide.png)
+
+### Associação
+![](./resources/associacao-slide.png)
+![](./resources/associacao-slide-2.png)
+
+### Generalização/Especialização
+![](./resources/generalizacao-especializacao-slide.png)
 
 grasp software
 https://sketchboard.io/
