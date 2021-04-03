@@ -26,12 +26,12 @@
 - Permite ou restringe características de qualidade
 - Permite predizer a qualidade do sistema
 - **Restringe o _design_ e a implementação**
-	- Encaminha decisões de design
-		- Como o sistema será distribuído?
-		- Como o sistema será estruturado?
-		- Como os componentes do sistema serão decompostos?
-		- Qual a melhor organização para tratar dos RNF?
-		- Existe alguma arquitetura genérica que pode ser usada como base?
+    - Encaminha decisões de design
+    - Como o sistema será distribuído?
+    - Como o sistema será estruturado?
+    - Como os componentes do sistema serão decompostos?
+    - Qual a melhor organização para tratar dos RNF?
+    - Existe alguma arquitetura genérica que pode ser usada como base?
 - Permite incorporar componentes desenvolvidos independentemente	
 - Ajuda a pensar sobre mudanças
 - melhora estimativas de custo e tempo
@@ -47,13 +47,13 @@ TODO pegar print com balões (video) slide 7
 TODO Pegar no video diferença entre diagrama e desenho(?)
 
 Uso de descrições arquiteturais (ISO, 2011):
-	- Base para as atividades de design e implementação
-	- Base para analisar alternativas de implementação
-	- Documentação de aspectos essenciais do sistema
-	- Entrada para ferramentas de simulação, análise e geração de código
-	- Comunicação entre stakeholders
-	- Guia para o suporte da operação e da infraestrutura
-	- Suporte para o planejamento, incluindo prazos e custos
+    - Base para as atividades de design e implementação
+    - Base para analisar alternativas de implementação
+    - Documentação de aspectos essenciais do sistema
+    - Entrada para ferramentas de simulação, análise e geração de código
+    - Comunicação entre stakeholders
+    - Guia para o suporte da operação e da infraestrutura
+    - Suporte para o planejamento, incluindo prazos e custos
 
 ## Visão - Arquitetura possui várias Facetas
 - A descrição da arquitetura inclui várias visões
