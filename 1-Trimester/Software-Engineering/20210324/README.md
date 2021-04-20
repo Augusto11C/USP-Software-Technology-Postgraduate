@@ -1,7 +1,5 @@
 # Implementação e Teste
 
-20/04 - Get Slides
-
 ## To Study
 - Problema da Parada 
 	- Teoria onde se diz que não é possivel determinar se um programa termina ou não
@@ -18,25 +16,26 @@ Responsabilidades:
 - Integração
 - gerar executáveis, bibliotecas e componentes
 
-TODO Image from slide 2
+![](./resources/project-impl-test-impltc.png)
 
-### Preocupações
+- a implementação é baseada no projeto
+### Preocupações (SWEBOK, 2014)
 minimizar complexibilidade
 -	correção, eficiencia e elegância (legível)
 
-Antecipar mudanças 
+**Antecipar mudanças** 
 - desperdício X retrabalho
 - (na prática é a arquitetura que acaba tendo maior nessa parte de retrabalho e mudanças futuras)
 
-Permitir a verificação 
+**Permitir a verificação**
 - Facilitar as atividades de Verificação e Validação 
 - Facilitar a depuração
 
-Reuso
+**Reuso**
 - usar libs, frameworks, códigos e componentes
 - criar elementos reusáveis -> planejamento
 
-padronização
+**Padronização**
 - padrões de código
 	- uso de recursos
 	- comunicação entre elementos de software
@@ -47,68 +46,80 @@ padronização
 ## Test-Driven Development (TDD)
 - Testes de unidade são feitos antes do código
 - abordagem usada pelo `Extreme Programming`
-Criar os testes como se o código já existisse ----> faz os testes compilarem ----> executar os testes (que devem falhar) ----> programar a solução ----> executar o teste `->....->` Criar os testes como se o código já existisse `->....->` 
+
+![](.resources/tdd-flow.png)
 
 ## Integração
-Juntar o trabalho dos programadores 
+**Juntar o trabalho dos programadores **
 - Gera uma versão "completa" do software 
 - Baseado na versão atual de cada item 
 - Verifica o trabalho dos desenvolvedores 
-- As partes do software funcionam em conjunto
+  - As partes do software funcionam em conjunto?
 
-Juntar o software a outros elementos 
+**Juntar o software a outros elementos **
 - Software e hardware
 
 Importância da **gerência de configuração**
 
-O ideal é integrar com alta frequência
+**O ideal é integrar com alta frequência**
 - mas a integração tem um custo envolvido.
 - Algumas questões a considerar
 	- Complexidade do software (e de seus módulos)
 	- Complexidade da integração
 		- Equipes distribuídas
 	- Duração das iterações 
-
+- Pode ser necessário um plano de integração
+  - Dependência entre componentes
 ## Testes
 - Atividade de controle da qualidade do produto
-TODO: Imagem slide 8
+![](.resources/project-impl-test-impltc.png)
 
 - Parte do processo de Verificação e Validação
 	- Forma mais comum V&V
 
-**O que é teste ?**
+**O que é Teste?**
 > Teste é o processo de executar um programa com o objetivo de encontrar erros
 > \- (MYERS, 2012, p.6)
 
+- Teste não é a atividade para garantir que o software não tenha erros
+  - Saídas corretas em um teste não garantem que o produto é adequado
+
 **Então por que não testar tudo?**
+- existem um número muito grande de cenários de teste para serem testados, o que torna a execução de todos eles impraticável.
+
+![](./resources/pq-nao-testar-tudo.png)
 
 ## Estratégia de Teste
-- Ajudam a escolher conjuntos de dados que têm maior probabilidade de existência de erros
+- Ajudam a escolher **conjuntos de dados** que têm maior probabilidade de existência de erros
 
 **Duas estratégias principais** 
-	- Estrutural: caixa branca
-	- Funcional: caixa preta
+  - Estrutural: caixa branca
+  - Funcional: caixa preta
 
 ### Teste Caixa Preta
 - Alvo do teste como uma caixa preta
 	- Não se usa nenhum detalhe interno
-TODO: Image slide 14
-- Foco na especificação
+
+![](./resources/teste-caixa-preta.png)
+
+- **Foco na especificação**
 	- A saída obtida para uma determinada entrada é a esperada?
 
 ### Teste Caixa Branca
 - O teste é feito considerando o conhecimento da estrutura interna do código
-TODO: Image slide 14
-- Foco nos caminhos 
+
+![](./resources/teste-caixa-branca.png)
+
+- **Foco nos caminhos **
 	- Condições, laços e comandos
 
 ### Estratégia de Testes
-Alguns tipos de defeitos só são encontrados aplicando uma das
-estratégias
-- Caixa branca: não se percebe a falta de caminhos
+Alguns tipos de defeitos só são encontrados aplicando uma das estratégias
+
+- **Caixa branca**: não se percebe a falta de caminhos
 	- Exemplo: faltou considerar alguma condição
 
-- Caixa preta: não se percebe alguns tipos de falhas da lógica interna
+- **Caixa preta**: não se percebe alguns tipos de falhas da lógica interna
 	- Exemplo: considerou-se um caso a mais
 
 ## Níveis de Teste
@@ -118,10 +129,13 @@ estratégias
 	- Cada teste considera aspectos de uma atividade de desenvolvimento
 
 ### Teste em V
-TODO: Image slide 19
+![](./resources/teste-em-v.png)
+- **teste funcional** testa a funcionalidade
+- **teste de sistema** testa o software junto com o hardware
+- **teste de aceitação** considera as necessidades do stakeholder
 
 ### Teste de unidade
-- Testa cada módulo do software
+- Testa cada **módulo** do software
 	- Menor elemento do software
 	- Comparar sua função à interface definida
 - Tradicionalmente feito pelo desenvolvedor
@@ -134,17 +148,17 @@ TODO: Image slide 19
 
 
 - Podem ser necessários drivers e stubs
-	- Driver: elemento que aceita dados de entrada e os passa para o elemento a
-ser testado
-	- Stub: substitui um elemento que é chamado
-	- Implementação simples, apenas para testar
-	- O termo mais genérico é dublê
+	- **Driver**: elemento que aceita dados de entrada e os passa para o elemento a ser testado
+	- **Stub**: substitui um elemento que é chamado
+    	- Implementação simples, apenas para testar
+  	- O termo mais genérico é dublê
 
 ### Teste de Integração
 - Testa as partes trabalhando em conjunto
-	- Trata de problemas com as interfaces dos elementos
+	- **Trata de problemas com as interfaces dos elementos**
 	- Considera outros componentes / serviços
-	- Também chamado de teste de serviço
+	- Também chamado de **teste de serviço**
+	- Necessário testar integração com o BD / serviços externos
 - Duas estratégias principais
 	- Big bang
 		- As partes são integradas de uma vez
@@ -153,13 +167,10 @@ ser testado
 		- As partes são integradas aos poucos
 		- Top-Down ou Bottom-Up
 
-#### Top-Down
-TODO: Imagem slide 24
+#### Top-Down & Bottom-up
+![](./resources/teste-integracao-top-down-bottom-up.png)
 
-#### Bottom-up
-TODO: Imagem slide 24
-
-#### Existem estratégias específicas para OO
+### Teste Integração OO
 - Teste baseado em Thread
 	- Integra as classes que tratam de uma "thread de funcionalidade" / evento específico do
 sistema 
@@ -168,12 +179,18 @@ sistema
 	- Testa primeiro as classes independentes e adiciona as classes dependentes
 	- Similar à integração Bottom-Up
 
-### Teste funcional
+### Teste Funcional
 - "Teste da especificação"
-	- Procura por diferenças entre o software e seu comportamento externo
-	- Testa o software como um todo
-	- Normalmente realizado como um teste caixa-preta
+	- Procura por diferenças entre o software e seu **comportamento externo**
+	- **Testa o software como um todo**
+	- Normalmente **realizado como um teste caixa-preta**
 	- Também chamado de teste de UI
+	- PS: Cucumber faz o teste funcional!!!
+
+#### Exemplo c/ Caso de Uso
+![](./resources/caso-de-uso-teste-funcional.png)
+- para testar funcionalmente, informamos um código de produto (ex: 123), verificamos o retorno descrição e preço (passo b), apos isso há a confirmação (passo C) 
+
 
 ### Teste de Sistema
 - Testa o software frente aos seus "objetivos"
@@ -181,11 +198,14 @@ sistema
 - Software como parte do sistema
 
 - Sistemas intensivos de software
-	- Exemplo: sistema web
-	- Diversos navegadores e SOs
+	- Exemplo: Se um software será um sistema web
+	- O que se deve considerar quando for realizar os testes de Sistemas são:
+    	- Diversos navegadores
+    	- SOs
+    	- Servidores
 	- Tradicionalmente aborda os requisitos não funcionais
 
-Alguns tipos de teste:
+**Alguns tipos de teste:**
 - Teste de stress
 - Teste de usabilidade
 - Teste de segurança
@@ -194,4 +214,17 @@ Alguns tipos de teste:
 
 ### Teste de Aceitação
 - verifica a espectativa dos stakeholder
+- Realizado pelos clientes/usuários
+- Apoiados por desenvolvedores
+- Usado para aceitação do software pelo cliente
+- Alguns tipos de teste de aceitação
+  - Teste alfa
+    - Uso do software dentro do ambiente de desenvolviment
+    - Em geral para software personalizado
+  - Teste beta
+    - Usuários em seu ambiente normal
+      - Permite analisar diversos ambientes
+    - Forma de marketing
+    - Em geral para software de prateleira
+
 
