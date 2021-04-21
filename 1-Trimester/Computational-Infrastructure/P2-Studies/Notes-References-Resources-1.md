@@ -1,6 +1,32 @@
-# Notes-References-Resources - 
+# Notes-References-Resources 1
 
-Arquitetura de um computador é o conjunto de atributos de um sistema de computação, como é visto pelo programador, isto é, a estrutura conceitual e o comportamento funcional, sem considerar a organização dos fluxos de dados e de controle, nem a implementação física.
+- [Notes-References-Resources 1](#notes-references-resources-1)
+  - [Fabricação CPU](#fabricação-cpu)
+  - [Velocidade e Dissipação](#velocidade-e-dissipação)
+  - [Lei de Amdahl](#lei-de-amdahl)
+  - [Mainframes](#mainframes)
+  - [Servidores](#servidores)
+    - [Servidores Desktops vs Servidores x86](#servidores-desktops-vs-servidores-x86)
+    - [Servidores em Blades](#servidores-em-blades)
+    - [Servidores "Open Compute Project"](#servidores-open-compute-project)
+  - [Processadores](#processadores)
+    - [Modelos Conceituais de Processadores](#modelos-conceituais-de-processadores)
+    - [Fluxo de Dados e de Controle](#fluxo-de-dados-e-de-controle)
+    - [Componentes Básicos de um Computador](#componentes-básicos-de-um-computador)
+    - [Funcionamento Básico de um Computador](#funcionamento-básico-de-um-computador)
+  - [Instrução](#instrução)
+    - [Diagrama de Estados](#diagrama-de-estados)
+    - [Instrução de Desvio](#instrução-de-desvio)
+      - [Interrupções](#interrupções)
+      - [Diagrama de estados + Interrupções](#diagrama-de-estados--interrupções)
+      - [Tipos de Interrupções](#tipos-de-interrupções)
+  - [Arquitetura do Conjunto de Instruções](#arquitetura-do-conjunto-de-instruções)
+  - [Estados do Processador](#estados-do-processador)
+    - [Como SO Garante Proteção Contra Interferências Entre Processos?](#como-so-garante-proteção-contra-interferências-entre-processos)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+- Arquitetura de um computador é o conjunto de atributos de um sistema de computação, como é visto pelo programador, isto é, a estrutura conceitual e o comportamento funcional, sem considerar a organização dos fluxos de dados e de controle, nem a implementação física.
 
 ## Fabricação CPU
 - Lingote de silício monocristalino ultra puro é cortado em fatias, e estas polidas.
@@ -153,3 +179,14 @@ Operação de desvio, com PRESERVAÇÃO do endereço dapróxima instrução, ca
   - é de uso cômodo no nível superior
   - permite uma implementação eficiente no nível inferiror
 
+## Estados do Processador
+- Para evitar que programas de usuários interfiram entre si, certas intruções podem ser usadas apenas pelo SO (instruções especiais de controle).
+- O processador pode estar em estado de usuário ou de controle
+- instruções especiais (de controle):
+  - iniciar op. E/S
+  - promover alocação de memória
+  - Parar o processador
+
+### Como SO Garante Proteção Contra Interferências Entre Processos?
+- Memória dividida em blocos
+- SO atribui a cada processo um conjunto de blocos que podem ser acessados, lidos e escritos apenas pelo próprio processo.
