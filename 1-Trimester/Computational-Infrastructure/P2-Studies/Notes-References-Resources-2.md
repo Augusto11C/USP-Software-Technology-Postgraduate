@@ -74,7 +74,6 @@ reduced power consumption due to the fact that the information is stored in the 
 - Capacidade  << DRAM
 - Custo >> DRAM
 - Tempo de acesso << que as DRAMs
-- 
 
 ##### DRAM vs SRAM
 - Ambas são voláteis.
@@ -83,4 +82,82 @@ reduced power consumption due to the fact that the information is stored in the 
 - Por outro lado, DRAM requer uma circuitaria de refrescamento. Para memórias grandes, esse custo fixo é mais que compensado pelo menor custo.
 - Daí DRAM é preferida para memórias grandes e SRAM (que é um pouco mais rápida) é mais usada em memória cache.
 
-   
+## Hierarquia de memórias
+![](resources/hierarquia-memorias.png)
+### Princípio da Localidade
+Programas tendem a acessar parte pequena de seu espaco de enderçmto em um certo interfavo de tempo
+
+- Localidade temporal: se item foi referenciado, é provavel que será referenciado em seguida.
+- Localidade Espacial: se um item foi referenciado, provável que os vizinhos sejam.
+
+### Nomeclatura
+```
+- TMAM Tempo Médio de Acesso à Memória (AMAT - Average Memory Access Time)
+- nível superior mais próximo do processador
+- nível inferior mais afastado do processador
+- falha (miss) quando a palavra procurada não está no nível superior
+- taxa de falhas (miss rate) percentual dos acessos ao cache que resultam em falha
+- penalidade por falha (miss penalty) tempo adicional quando ocorre uma falha
+- sucesso (hit) quando a palavra procurada está no nível superior
+```
+## Como é Organizado o Cache?
+- É dividido em conjuntos
+- Cada conjunto contém uma ou mais linhas
+- Cada linha contém um tag e um bloco de dados
+
+![](resources/organizacao-cache.png)
+
+## Princípio Funcionamento Dos Caches
+- processador gera endereço
+- cache verifica se tem info.
+    - se estiver manda para processador.
+- se não tiver vai até memoria principal.
+
+### Processo de transferência de dados
+- cpu & cache: uma única palavra por operação
+- cache & mem: bloco por operação
+### Mapeamento direto Cache e Memória
+- uma única linha por conjunto
+- cada posição de memória só pode ser copiada para uma determinada linha do cache
+- O mapeamento direto é simples mas tem uma desvantagem. Se o programa acessa repetida e alternadamente dois blocos de memória mapeados à mesma posição na cache, então esses blocos serão continuamente introduzidos e retirados da cache. 
+- O fenômeno acima tem o nome de **thrashing**, resultando em um
+número grande de hit miss ou baixa hit ratio.
+
+### Escrita em memória
+#### Write back - escrita realizada somente no cache
+- caso haja necessidade de uma linha conter outra posição de memória, verifica se esta suja. caso esteja
+    - A linha é escrita na memoria
+    - a outra posição de memória é enviada para o cache
+
+#### Write through 
+- todas as escritas são feitas no cache e na memória
+- usa buffer para escrever
+- nos dois casos, a escrita pode ser feita diretamente na memória ou em um buffer para escrita quando houver tempo.
+  
+### Desempenho com Cache
+```
+TMAM (tempo médio de acesso à memória): tempo de hit + Tax de falhas * penalidade por falha
+```
+
+**Exemplo**: 
+- tempo de hit: 1; taxa de falhas: 2%; penalidade por falha= 50
+```
+TMAM = 1 + 0,02 * 50 = 1 + 1 = 2
+``` 
+
+#### Desempenho com Cache de Segundo Nível (L2)
+```
+TMAM = tempo de hit1 + taxa de falhas1 x (tempo de hit2 +
+taxa de falhas2 x penalidade por falha2
+```
+
+### Tipo de Falhas em Cache
+- compulsórias: O primeiro acesso a um bloco nunca o encontra no cache; assim, o bloco tem que ser trazido para o cache pelo menos uma vez. (A falha ocorre mesmo com um cache infinito).
+- capacidade: Se o cache não conseguir conter todos os blocos necessários durante a execução, falhas por capacidade vão ocorrer, obrigando à remoção de blocos que serão necessários mais tarde.
+- conflito: Se a estratégia de alocação de blocos for parcialmente associativa ou por mapeamento diretos, falhas por conflito vão ocorrer pois a posição em que um bloco pode ser colocado pode estar ocupada,
+mesmo existindo outras posições livres no cache.
+
+#### Solução
+- Falhas compulsórias: eventos inevitáveis.
+- Falhas por conflito: aumenta-se o tamanho ou a associatividade do cache.
+- Falhas por capacidade: aumenta-se o cache.
