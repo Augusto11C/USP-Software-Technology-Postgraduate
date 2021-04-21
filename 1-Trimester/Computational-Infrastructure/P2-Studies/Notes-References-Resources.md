@@ -71,7 +71,7 @@ Projeto de arquitetura aberta, desenvolvido por Facebook, e posteriormente outra
 - PS: Os processadores modernos apresentam aspectos das duas arquiteturas.
 
 ### Fluxo de Dados e de Controle
-Fluxo de Dados e de Controle
+Fluxo de Dados e de Controle
 
 - O fluxo de dados (datapath) representa os caminhosque os dados podem percorrer em um sistema digital.
 
@@ -81,4 +81,75 @@ Fluxo de Dados e de Controle
 - unidade de processamento: realiza operações
 - memória: armazena dados e instruções
 - controle: controla a operação de todas as unidades (geralmente não é representado)
+
+### Funcionamento Básico de um Computador
+```
+start -> (A) obtém a proxima instrução -> executa a instrução -> (A) ou FIM
+```
+
+## Instrução
+```
+ [(oper) (   endereço   )]
+ [LOAD A(940)]
+ ```
+![](./resources/formato-instrucao-exemplo.png)
+
+- Instruções são compostas por uma seqüência de bits.
+![](./resources/instrucao-formato-geral.png)
+
+- Tipos de Operando
+  - referencia a registradores
+  - referencia a endereçõs de memória
+  - implícitos
+### Diagrama de Estados
+```
+1. Calculo do endereço da instrução (A)
+2. Leitura da instrução
+3. Decodificação da instrução
+4. Calculo do endereço do operando
+     4.1. leitura do operando 
+5. Operação
+6. Cáculo do endereço do operando
+    6.1 Escrita do Operando
+7. (A)
+```
+### Instrução de Desvio
+- Função: passar a executar uma instrução em outro trecho do programa.
+- pode ser **condicional** ou **incondicional**
+
+#### Interrupções
+Há interrupções com a preservação do endereço da proxima instrução. 
+
+Operação de desvio, com PRESERVAÇÃO do endereço dapróxima instrução, causada por um evento externoao processador como E/S.
+
+![](./resources/interrupcao-exemplo.png)
+
+#### Diagrama de estados + Interrupções
+![](./resources/cpu-diagram-estados-com-interrupcao.png)
+
+#### Tipos de Interrupções
+- Entrada e saída
+- Temporizador (relógio)
+- Trace
+- Falha de página
+- Falta de energia
+- Operações aritméticas inválidas
+- Instruções inválidas
+- Erro de endereçamento
+- Proteção de memória
+- Defeito de hardware
+
+## Arquitetura do Conjunto de Instruções
+```
+==== Software ====
+       |
+=-=-Interface-=-=
+       |
+-----Hardware-----
+```
+
+- Qualidade interface:
+  - Resiste a muitas implementações
+  - é de uso cômodo no nível superior
+  - permite uma implementação eficiente no nível inferiror
 
