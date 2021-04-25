@@ -93,7 +93,7 @@ Dependency arrows are arranged to point from lower-level details to higher-level
 
 Clean Architecture isn't about using 'use cases', it's about defining hard and soft boundaries in your application. You want to protect stuff that doesn't change as often (entities) from stuff that does change often (UI), or unstable components (Android). By providing clear boundaries between different layers you protect the higher level policies from the lower level policies. One way to do this is to define entity, use case and presentation layers [0] (AUG).
 
-##Vantagens e desvantagens
+## Vantagens e desvantagens
 
 ### Vantagens
 Developing the high-level policy first (agnostic to any low-level details) is to allow the test of which "details", such as databases, works better with the architecture [0] (AUG). 
