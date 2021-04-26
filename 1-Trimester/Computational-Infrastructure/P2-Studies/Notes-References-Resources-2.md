@@ -1,4 +1,33 @@
 # Notes-References-Resources 2
+- [Notes-References-Resources 2](#notes-references-resources-2)
+  - [Hyperthreading](#hyperthreading)
+    - [Hyperthreading References](#hyperthreading-references)
+  - [Evolução da Arquitetura Memória-Processador](#evolução-da-arquitetura-memória-processador)
+  - [Memórias](#memórias)
+    - [Tipos de Memórias](#tipos-de-memórias)
+    - [Conteúdo Fixo](#conteúdo-fixo)
+      - [ROM](#rom)
+    - [Conteúdo Variável](#conteúdo-variável)
+      - [Memória RAM](#memória-ram)
+        - [DRAM (Dynamic RAM)](#dram-dynamic-ram)
+        - [SRAM (Static RAM)](#sram-static-ram)
+        - [DRAM vs SRAM](#dram-vs-sram)
+  - [Hierarquia de memórias](#hierarquia-de-memórias)
+    - [Princípio da Localidade](#princípio-da-localidade)
+    - [Nomeclatura](#nomeclatura)
+  - [Como é Organizado o Cache?](#como-é-organizado-o-cache)
+  - [Princípio Funcionamento Dos Caches](#princípio-funcionamento-dos-caches)
+    - [Processo de transferência de dados](#processo-de-transferência-de-dados)
+    - [Mapeamento direto Cache e Memória](#mapeamento-direto-cache-e-memória)
+    - [Escrita em memória](#escrita-em-memória)
+      - [Write back - escrita realizada somente no cache](#write-back---escrita-realizada-somente-no-cache)
+      - [Write through](#write-through)
+    - [Desempenho com Cache](#desempenho-com-cache)
+      - [Desempenho com Cache de Segundo Nível (L2)](#desempenho-com-cache-de-segundo-nível-l2)
+    - [Tipo de Falhas em Cache](#tipo-de-falhas-em-cache)
+      - [Solução](#solução)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Hyperthreading
 - Hyperthreading is the hardware solution to increasing processor throughputby decreasing resource idle time.
