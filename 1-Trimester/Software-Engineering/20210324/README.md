@@ -1,5 +1,7 @@
 # Implementação e Teste
 
+20/04 - Get Slides
+
 ## To Study
 - Problema da Parada 
 	- Teoria onde se diz que não é possivel determinar se um programa termina ou não

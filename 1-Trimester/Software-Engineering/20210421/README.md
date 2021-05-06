@@ -1,5 +1,7 @@
 # Dívida Técnica
 
+04/05 - Get Slides
+
 - Atalhos que os desenvolvedores tomam durante o desenvolvimento.
 - Artefatos incompletos, imaturos e inadequados que aumentam o custo e diminuem a qualidade
 - Ajuda a comunicar para pessoas não técnicas

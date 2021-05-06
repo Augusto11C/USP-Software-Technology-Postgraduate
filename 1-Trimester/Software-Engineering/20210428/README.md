@@ -1,5 +1,7 @@
 # Qualidade
 
+06/05 - Get Slides
+
 - Definição
 > O grau em que o sistema, componente ou processo atende (1) os requisitos especificados e (2) as expectativas e necessidades do cliente ou do usuário.
 > \- (IEEE 610, 1990)

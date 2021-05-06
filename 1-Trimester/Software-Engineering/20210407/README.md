@@ -1,4 +1,7 @@
 # Gerência de Projeto
+
+03/05 - Get Slides
+
 **livro**
 - peopleware
 - [Taxonomy-Based Risk Identification](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=11847)
