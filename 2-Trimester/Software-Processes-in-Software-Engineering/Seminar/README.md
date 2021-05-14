@@ -12,3 +12,14 @@ O entregável do seminário refere-se ao conjunto de slides elaborados pelo grup
 
 ### Seções Obrigatórias
 Introdução, Desenvolvimento, Conclusão e Referências. 
+
+### Referências
+- Software Engineering: A Practitioner's Approach 8th ed. by Roger S. Pressman, Bruce Maxim - 2014
+- Concise Guide to Software Engineering: From Fundamentals to Application Methods 1st ed. by Gerard O'Regan - 2017
+- Debugging Teams: Better Productivity through Collaboration 2sd ed. by Brian W. Fitzpatrick, Ben Collins-Sussman - 2015 (Downloaded)
+- Introduction to Software Process Improvement 2011th ed by  Gerard O'Regan
+
+
+### Articles
+- Strategic Issues on Implementing a Software Process Improvement Program by Rogério Rossi, Kechi Hirama
+- A Comprehensive Software Project Management Framework by Mohamed Ellithey Barghoth, Akram Salah, Manal A. Ismail

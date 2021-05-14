@@ -1,12 +1,4 @@
-# Engenharia de Requisitos
-## Estrutura do Curso
-- 14/07 - Prova
-- Média = (Exercícios + 2*Projeto + 3*Prova)/6
-- Projeto
-	- História de Usuário (20 história)
-	- Casos de Uso (5 casos de uso)
-	- Data 21/07
-
+# Engenharia de Requisitos - Introdução
 ## Livros
 - Software Requirements (Developer Best Practices) 3rd Edition - Joy Beatty e Karl Wiegers
 - User Stories Applied: For Agile Software Development
@@ -15,6 +7,7 @@
 > Função interdisciplinar que media entre os domínios do adquirente e fornecedor para estabelecer e
 > manter os requisitos a serem cumpridos pelo sistema, software ou serviço de interesse (ISO, 2018).
 
+![](./resources/context-er.png)
 ## Problemas ER
 Alguns problemas para a ER (Wiegers e Beatty, 2013) 
 - Envolvimento do usuário insuficiente
@@ -45,7 +38,7 @@ Alguns problemas para a ER (Wiegers e Beatty, 2013)
 		- Tem interesse em entender como a solução será desenvolvida
 		- Estará envolvido em propagandear, vender, instalar ou manter
 
-- Envolvimento (Leffingwell, 2011)
+- Envolvimento do Stakeholder (Leffingwell, 2011)
 	- Precisam ser informados
 	- Precisam ser consultados
 	- São parceiros no desenvolvimento
@@ -66,7 +59,7 @@ Alguns problemas para a ER (Wiegers e Beatty, 2013)
 
 **Definição 2**
 > a) Uma **condição** ou **capacidade** necessária por um **usuário** para *resolver um problema ou atingir um objetivo*.
-> b) Uma **condição** ou **capacidade** que deve ser cumprida ou possuída por um sistema ou componente do sistema para satisfazer um contrato, padrão, especificação, ou outros documentos formalmente impostos
+> b) Uma **condição** ou **capacidade** que deve ser cumprida ou possuída por um sistema ou componente do sistema para **satisfazer** um *contrato, padrão, especificação, ou outros documentos formalmente impostos*
 
 ### Tipos de requisitos
 	- Funcionais
@@ -94,7 +87,7 @@ Alguns problemas para a ER (Wiegers e Beatty, 2013)
 - Definem **propriedades de qualidade** do sistema a serem desenvolvidas
 	- Afetam todo o sistema ou uma parte dele
 	- **Influenciam a arquitetura**
-	- Também chamados de **requisitos de qualidade** (~ Requisitos não funcionais)
+	- Também chamados de **requisitos de qualidade** (~ Requisitos não Funcionais)
 	- Relacionadas a **desempenho**, **segurança**, **usabilidade** etc.
 
 - **Exemplo: loja virtual**
@@ -116,15 +109,15 @@ Alguns problemas para a ER (Wiegers e Beatty, 2013)
 	2. As senhas armazenadas no sistema devem ser criptografadas, sendo protegidas contra roubo. (req não-funcional)
 	3. As senhas devem ser criptografadas usando o algoritmo AES e usando salt aleatório de 8 bytes. (restrição ou req não-funcional)
 
-## Taxonomias Requisitos Não Funcionais
-ISO 25000
+## Taxonomia - Requisitos Não Funcionais
+### ISO 25000
 - SQuaRE
 	- *Software Product Quality Requirements and Evaluation*
 - Família de normas
 	- Reorganização e **revisão de outras normas**
 		- ISO 9126 e ISO 14598
 	- ISO 25010 (2011) é a parte que define o modelo de qualidade
-- **Define características** que podem ser usadas para **especificar, medir e avaliar a qualidade**
+- **Define características** que podem ser **usadas** para **especificar, medir e avaliar a qualidade**
 	- Características são divididas em subcaracterísticas
 	- Característica/subcaracterística consideram **graus**
 		- **O grau em que algo é atendido**
@@ -136,8 +129,11 @@ ISO 25000
 		- Resultado do uso do software
 		- Características
 			- Eficácia
+    			- Acurácia ou completude com que o usuário atinge os objetivos
 			- Eficiência
+    			- Recursos despendidos em relação à acurácia e completude com o quais o usuário atinge os objetivos
 			- Satisfação
+    			- O grau que as necessidades do usuário estão satisfeitas ao usar o produto
 				- Utilidade
 				- Confiança
 				- Prazer
@@ -146,17 +142,34 @@ ISO 25000
 				- Mitigação de riscos de saúde e segurança (safety)
 				- etc
 			- Cobertura do Contexto
+    			- Grau que o produto pode ser usado com eficiência, eficácia, ausência de risco e satisfação nos contextos definidos ou em outros contextos
 		- As características dependem do **contexto de uso**
 			- Outros fatores além do software
 				- Características do usuário, características da tarefa, hardware, ambiente de operação e características do ambiente social
-		- TODO get image 21
+		- ![](./resources/qualidade-em-uso-iso-25010.png)
 
 	- **Qualidade do produto**
-		- abstração para linhas gerais de **qualidade em uso**
+    	- Considera um ambiente diferente do contexto de uso real
+        	- Uma "estimativa" da qualidade em uso
+    		- abstração para linhas gerais de **qualidade em uso**
 		- Trata de propriedades de qualidade do produto
 		- Útil para especificação ou para a **avaliação de um produto**
 		- Pode ser usada como **taxonomia de requisitos não funcionais**
-		- TODO get slides Qualidade do Produto
+		- ![](./resources/qualidade-do-produto-iso-25010.png)
+    		- Adequação funcional
+        		- Em geral não se considera como RNF
+      		- Eficiência de execuç~ao
+        		- O desempenho relativo a quatidade de recursos usados
+      		- Compatibilidade
+        		- O quanto o produto pode compartilhar informações e recursos
+      		- Usabilidaded
+        		- O quanto é fácil usar o produto
+      		- Confibialidade
+        		- O quanto produto executa suas funções nas candições especificadas e no período de tempo especificado
+      		- Segurança
+        		- O quanto as informações são protegidas
+      		- Manutenibilidade
+      		- Portabilidade
 
 ## Escopo do Sistema
 ### Contexto
@@ -170,8 +183,8 @@ ISO 25000
 	- (Mas o ambiente **as-is** é *importante para entender os requisitos*)
 
 - Nem toda informação do ambiente é relevante
-	- **Contexto**: parte **relevante** do ambiente para definir, entender e interpretar os
-requisitos do software
+	- **Contexto**: parte **relevante** do ambiente para definir, entender e interpretar os requisitos do software
+	- ![](./resources/contexto-escopo-software.png)
 	- o software será parte do contexto no ambiente **to-be**
 
 - Existem duas fronteiras
@@ -191,9 +204,10 @@ requisitos do software
 		- prazo, orçamento
 
 ### WRSPM
+- W=World, R=Requirement, S=specification, P=Platform, M=machine
 - onde estão os requisitos?
 	- modelo WRSPM 
-		- TODO get image 33
+		![](./resources/modelo-wrspm.png)
 		- contexto
 			- possui fenômenos do ambiente
 			- 2 (R) - são os requisitos do stakeholder (reflexo do software no ambiente)
@@ -203,7 +217,7 @@ requisitos do software
 			- Fenômenos compartilhados
 			- 3 (S) - requisitos de software (o que o desenvolvedor implementa)
 		- Fenômenos: eventos, objetos, estados e variáveis
-		- TODO get image 35 e definition of WRSP
+	![](./resources/modelo-wrspm-complete.png)
 
 ---
 - os requisitos são afirmações do ambiente
@@ -225,14 +239,14 @@ requisitos do software
 	- Ex: O sistema deve solicitar os dados de pagamento ao cliente, usando uma conexão segura.
 	- Answer: No!!!
 - Requisitos são **refinados em requisitos mais detalhados**
-	- TODO get image 37
+	- ![](./resources/refinamento-requisitos.png)
 	- modelos de refinamento
 		- tropos
 		- i* (i-star)
 		- kaoes
 
-### Metas
--  Os requisitos são originários de **metas**
+## Metas
+-  **Os requisitos são originários de** **metas**
 	- Objetivos que o software deve atingir **(porquê)**
 	- Diferentes stakeholders têm diferentes metas
 	- Em geral são apresentados de forma vaga
@@ -242,9 +256,24 @@ requisitos do software
 		- Usar tecnologias modernas
 - Metas mudam lentamente
 	- Requisitos e o escopo mudam com mais frequência
+- **Relação das metas e o contexto**
+  - ![](./resources/metas-vs-contexto.png)
+    - Explicando a Imagem: metas serão satisfeitas por meio de serviços, restrições e fatos assumidos
+    - Nem toda meta será traduzida em software!!
 
-### Níveis de Refinamento
+### Níveis de Abstração
+- ![](./resources/metas-niveis-abstracao-requisitos.png)
 - Metas são refinadas em outras metas
 	- Metas contribuem para outras metas
 	- Exemplo
 		- TODO get images
+## Requisitos e Arquitetura
+Requisitos não devem ter detalhes de implementação
+- Mas decisões arquiteturais afetam os requisitos
+  - Alguns refinamentos só são possíveis em uma arquitetura
+    - Exemplo
+      - Se for aplicativo Android, é possível usar GPS ou giroscópio
+    - Se usar a autenticação do Google, já confirmamos que a pessoa é válida
+
+- não é possível separar arquitetura dos requisitos
+  - O arquiteto deve participar das atividades de ER
