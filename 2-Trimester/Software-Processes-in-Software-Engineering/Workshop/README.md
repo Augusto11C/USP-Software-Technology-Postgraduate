@@ -10,3 +10,7 @@ Seções obrigatórias:
 - conclusões
 
 A duração da apresentação é de 20 minutos
+
+## Articles
+[C. Ebert - Software Product Management, 2014](https://github.com/AugustoCalado/Books-Repository/blob/main/Articles/C-Ebert-Software-Product-Management.pdf)
+[C. Ebert, S. Brinkkemper - Software product management – An industry evaluation, 2014](https://github.com/AugustoCalado/Books-Repository/blob/main/Articles/C-Ebert-and-S-Brinkkemper-Software-Product-Management-An-industry-Evaluation.pdf)
