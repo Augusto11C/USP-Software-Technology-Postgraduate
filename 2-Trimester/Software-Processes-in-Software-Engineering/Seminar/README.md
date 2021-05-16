@@ -19,7 +19,6 @@ Introdução, Desenvolvimento, Conclusão e Referências.
 - Debugging Teams: Better Productivity through Collaboration 2sd ed. by Brian W. Fitzpatrick, Ben Collins-Sussman - 2015 (Downloaded)
 - Introduction to Software Process Improvement 2011th ed by  Gerard O'Regan
 
-
 ### Articles
 - Strategic Issues on Implementing a Software Process Improvement Program by Rogério Rossi, Kechi Hirama
 - A Comprehensive Software Project Management Framework by Mohamed Ellithey Barghoth, Akram Salah, Manal A. Ismail

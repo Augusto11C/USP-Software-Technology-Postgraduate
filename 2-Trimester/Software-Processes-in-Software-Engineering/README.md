@@ -8,6 +8,3 @@ Abordar os fundamentos de processos de software no âmbito do projeto e no âmbi
 3. Workshop
 4. Seminário
 5. Prova 12/07/21
-
-## Sumário
-- [Introdução Processo de Software](./20210510/README.md)

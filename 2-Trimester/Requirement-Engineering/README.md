@@ -11,6 +11,3 @@ Capacitar os alunos com os principais conceitos e técnicas da Engenharia de Req
 - Projeto
 	- História de Usuário (20 história)
 	- Casos de Uso (5 casos de uso)
-
-## Sumário
-- [Requisitos de Software, RF, RNF, Taxonomia, WRSPM, Refinamentos, Metas](./20210512/README.md)
