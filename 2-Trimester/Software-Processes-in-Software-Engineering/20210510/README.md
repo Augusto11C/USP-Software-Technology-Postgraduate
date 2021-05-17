@@ -7,7 +7,7 @@
 - Product, Project, People, and Process (**4Ps model**)
 - **Processo** é um conjunto de recursos e atividades interrelacionados que transformam insumos em produtos (ISO 8402)
   - Possuem objetivos estabelecidos periodicamente
-  - Contínuos e repetitivos
+  - Contínuos ("pois o processo não acaba") e repetitivos ("a medida que ele existe eu repito para outros casos e situações")
   - Pode ser repetido em outras partes, projeto e situações da organização
 - **Projeto** um esforço temporário empreendido para criar um produto, serviço ou resultado excluviso. (PMI, 2008)
   - Possuem objetivos únicos e específicos
@@ -51,8 +51,21 @@ informal; pode mudar diariamente; não ser eficiente, fetivo ou bem-sucedido; po
 **Definição SEI/CMMI Sobre Processo de Software**
 > Processo de software é um conjunto de atividades, métodos, práticas e transformações que as pessoas utilizam para desenvolver e manter software e produtos relacionados.
 
-- **Processos de Engenharia** construção e manutenção do produto de software
-- **Processos de Gerenciamento** – estimativas, planejamento e controle dos recursos necessários para o desenvolvimento do software
+- **Processos de Engenharia** - construção e manutenção do produto de software
+  - Requirements Process
+  - Design Process
+  - Coding Process
+  - Testing Process
+  - etc
+- **Processos de Gerenciamento** - estimativas, planejamento e controle dos recursos necessários para o desenvolvimento do software
+  - Project Management Process
+  - Supplier Selection and Management Processes
+  - Improvement Process
+  - etc
+
+- Processos interligam **pessoas, tecnologia e procedimentos**
+  - Pode ser documentado
+  - Pode ser não documentado ad hoc
 
 ### Elementos Básicos de um Processo
 - Atividades – ações que geram e modificam artefatos.
@@ -71,16 +84,16 @@ informal; pode mudar diariamente; não ser eficiente, fetivo ou bem-sucedido; po
   - Abilidade para modelar e definir os processos
 
 - Processo disciplinado
-  1. O processo está formalizado e todos tem conhecimento?
-  2. As pessoas são treinadas para aplicar o processo?
-  3. O processo é usado? Existem mecanismos e procedimentos para usá-lo?
-  4. Será que o processo ajuda ou dificulta as atividades das pessoas? Existem mecanismos para acompanhar o desempenho do processo?
-  5. Os gestores gerenciam suas equipes por meio de medição da conformidade ao processo e do desempenho do processo?
+  1. O processo está formalizado e todos tem conhecimento? Para ser disciplionado precisa ser sim!
+  2. As pessoas são treinadas para aplicar o processo? Para ser disciplionado precisa ser sim!
+  3. O processo é usado? Existem mecanismos e procedimentos para usá-lo? Para ser disciplionado precisa ser sim!
+  4. Será que o processo ajuda ou dificulta as atividades das pessoas? Existem mecanismos para acompanhar o desempenho do processo? Para ser disciplionado precisa ser sim!
+  5. Os gestores gerenciam suas equipes por meio de medição da conformidade ao processo e do desempenho do processo? Para ser disciplionado precisa ser sim!
 
 - Processos e Comportamento da Equipe
   - Em geral, uma equipe segue um processo padrão que usualmente exibe uma ordem consistente de comportamento
   - Atividades de indivíduos estão alinhadas com os objetivos da equipe
   - Um processo maduro e disciplinado resulta em um comportamento disciplinado, portanto, menos retrabalho, melhor controle do projeto e melhor qualidade do produto
-
-
-  
+ 
+ 
+ - Gerenciamento de processos está automaticamente ligado a melhoria contínua
