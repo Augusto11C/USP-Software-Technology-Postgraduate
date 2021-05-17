@@ -8,6 +8,7 @@
 - **Processo** é um conjunto de recursos e atividades interrelacionados que transformam insumos em produtos (ISO 8402)
   - Possuem objetivos estabelecidos periodicamente
   - Contínuos e repetitivos
+  - Pode ser repetido em outras partes, projeto e situações da organização
 - **Projeto** um esforço temporário empreendido para criar um produto, serviço ou resultado excluviso. (PMI, 2008)
   - Possuem objetivos únicos e específicos
   - Temporário e único
@@ -50,8 +51,8 @@ informal; pode mudar diariamente; não ser eficiente, fetivo ou bem-sucedido; po
 **Definição SEI/CMMI Sobre Processo de Software**
 > Processo de software é um conjunto de atividades, métodos, práticas e transformações que as pessoas utilizam para desenvolver e manter software e produtos relacionados.
 
-**Processos de Engenharia** construção e manutenção do produto de software
-**Processos de Gerenciamento** – estimativas, planejamento e controle dos recursos necessários para o desenvolvimento do software
+- **Processos de Engenharia** construção e manutenção do produto de software
+- **Processos de Gerenciamento** – estimativas, planejamento e controle dos recursos necessários para o desenvolvimento do software
 
 ### Elementos Básicos de um Processo
 - Atividades – ações que geram e modificam artefatos.
