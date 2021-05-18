@@ -152,16 +152,47 @@ Data Warehouse ----> (estatísticas/IA) ----> conhecimento (regras/padrões)
 3. Aplicação de ferramenta analítica de dados
 4. Utilização dos resultados da análise
 
-## Governança de Dados
+## Governança de Dados 
+- "Teoria que deve dirigir a aplicação prática das regras e normas de gerenciamento dos dados"
 - Definição: organização de pessoas, processos e tecnologia para habilitar uma organização a alavancar os dados como recurso
-- Visa obter maior taxa de sucesso, entregar mais valor e reduzir tempo de entrega de projetos
+- Visa **obter** maior taxa de sucesso, entregar mais valor e reduzir tempo de entrega de projetos
 - Prover as condições para um gerenciamento eficiente das atividades de TI
 - priorizar e direcionar os objetivos
 
 ![](./resources/foco-governan-dados.png)
 
+### Métricas
+- medir o valor dos dados
+- medir o custo do gerenciamento de dados
+- medir número de profissionais envolvidos
+- medir cumprimento dos objetivos
+- medir Maturidade do processo de gerenciamento dos dados
+
 ## Gerenciamento de Dados
 - Colocar em prática as linhas mestras da Governança
-- Aplicar controles e processos para alcanãr os objetivos estratégicos estabelecidos na Governança
+- Aplicar controles e processos para alcançar os objetivos estratégicos estabelecidos na Governança
 - Vai de ações estratégicas até ações operacionais
 - Tratar a informação como um recurso muito valioso
+
+## Atores do Sistema
+- Sistema de Informação recebem informações de agentes externos e restrições
+  - governo
+  - concorrentes
+  - clientes
+  - tecnologia
+  - instit. Financeiras
+## Funções Gerenciais
+### CIO
+- Interpessoais
+  - Símbolo
+  - Lider
+  - União
+- Informacionais
+  - Centralizar
+  - Disseminar
+  - Porta voz
+- Decisão
+  - Organizar
+  - Tratar Distúrbios
+  - Alocar recursos
+  - Negociar
