@@ -22,3 +22,5 @@ Introdução, Desenvolvimento, Conclusão e Referências.
 ### Articles
 - Strategic Issues on Implementing a Software Process Improvement Program by Rogério Rossi, Kechi Hirama
 - A Comprehensive Software Project Management Framework by Mohamed Ellithey Barghoth, Akram Salah, Manal A. Ismail
+#### DevOps Articles
+- [Dimensions of DevOps by Lucy Ellen Lwakatare, Pasi Kuvaja, Markku Oivo](https://github.com/AugustoCalado/Books-Repository/blob/main/Articles/L-Lwakatere-P-Kuvaja-M-Oivo-Dimensions-of-DevOps.pdf)
