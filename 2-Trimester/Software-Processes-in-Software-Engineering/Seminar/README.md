@@ -24,3 +24,4 @@ Introdução, Desenvolvimento, Conclusão e Referências.
 - A Comprehensive Software Project Management Framework by Mohamed Ellithey Barghoth, Akram Salah, Manal A. Ismail
 #### DevOps Articles
 - [Dimensions of DevOps by Lucy Ellen Lwakatare, Pasi Kuvaja, Markku Oivo](https://github.com/AugustoCalado/Books-Repository/blob/main/Articles/L-Lwakatere-P-Kuvaja-M-Oivo-Dimensions-of-DevOps.pdf)
+- [Adopting DevOps Practices in Quality Assurance by James Roche](https://github.com/AugustoCalado/Books-Repository/blob/main/Articles/J-Roche-Artigo-Adopting-DevOps-Practices-in-Quality-Assurance.pdf)
