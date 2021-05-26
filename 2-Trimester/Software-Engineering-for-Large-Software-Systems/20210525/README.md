@@ -121,8 +121,6 @@ Search uolps### MDX - Multi-Dimensional eXpressions
 - Sorts: ordenamento de informações
 - Exceções: restringir grupos de valores
 - Visualização de limites: diferenciação de cores/fontes
-
-
 ### Thinking Before Get OLAP
 - Definir necessidades de negócio antes de contatar fornecedores
   - Descobrir o que os usuários realmente
@@ -130,3 +128,5 @@ precisam, não o que eles dizem precisar
   - Envolver usuários finais em todos os estágios
   - Volume de dados (atual e futuro)
 
+## Matriz de Barramento
+TODO
