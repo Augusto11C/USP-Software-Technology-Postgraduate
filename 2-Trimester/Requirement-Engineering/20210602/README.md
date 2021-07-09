@@ -188,7 +188,9 @@ do software (COHN, 2004)
 ---
 #### Exemplo 1
 > DICA: O que Você quer verificar nesse cenário?
+
 > DICA: acceptance criteria specify conditions under which a user story is fulfilled.
+
 > DICA: Pensar como se fosse uma atividade do usuário, ele pode verificar.
 
 ```
