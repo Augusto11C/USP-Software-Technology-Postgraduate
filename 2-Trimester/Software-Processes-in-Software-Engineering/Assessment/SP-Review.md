@@ -359,13 +359,13 @@ Process Mining (ou Mineração de Processos) um conjunto de técnicas quem extra
 
 <br>
 
-TODO get image slide 14
+![](./resources/process-mining-def.png)
 
 - **Discovery** - Takes an event log and produces a process model without using any a-priori information
 - **Conformance** - monitoring deviations by comparing model and event log. Conformance checking can be used to check if reality, as recoded in the log, conforms to the model and vice versa
 - **Enhancement** - The ideia is to exted or improve an existing process model using information about the actual process recorded in some event log
 
-TODO get image slide 15
+![](./resources/process-mining-input-output.png)
 
 
 - Ciclo de aplicação
