@@ -248,3 +248,225 @@
 - **working software** over **comprehensive documentation**
 - **customer collaboration** over **contract negotiation**
 - **responding to change** over **following a plan**
+
+
+#### Principais Princípios
+- Nossa maior prioridade é satisfazer ao cliente com entrega contínua e adiantada de software com valor agregado.
+- Entregar frequentemente software funcionando, de poucas semanas a poucos meses, com preferência à menor escala de tempo.
+- Construa projetos em torno de indivíduos motivados. Dê a eles o ambiente e o suporte necessários e confie neles para realizar o trabalho.
+- Software funcional é a medida primária do progresso.
+- Contínua atenção à excelência técnica e bom projeto aumenta a agilidade.
+- As melhores arquiteturas, requisitos e projetos emergem de times auto-organizáveis.
+- Lista priorizada de requisitos de negócios
+	- requisitos de maior prioridade são trabalhados primeiro
+
+### Reflexão sobre Agile Manifesto
+- É **uma atitude**, não refere-se a um processo prescritivo
+- É um **suplemento aos métodos existentes**, não se apresenta como um modelo completo
+- É uma **forma efetiva de se trabalhar em conjunto** para atingir as necessidades das partes interessadas no Projeto
+- **Não é um ataque aos artefatos**, **mas** aconselha a **criação de artefatos que tem valor**
+- Fatores humanos enfatizados: Auto-organização, foco comum, colaboração, multidisciplinaridade, habilidade na tomada de decisão
+
+### Scrum
+### processos, artefatos e atores
+- Processos
+- Game, PreGame, PostGame, Sprints, Sprint Planning Meeting,
+Sprint Retrospective, Daily Meeting
+- Artefatos
+- Product Baklog, Sprint Backlog, Post-Its, BurnDown
+- Atores
+- Product Owner, Scrum Master, Scrum Team
+
+#### Fases
+1. Planning Phase - fluxo linear + entradas e saídas definidas
+	- Conhecimento backlog a ser desenvolvido
+	- definição das datas de entregas
+	- priorização das releases
+	- identificar mudanças necessárias para implementar um item no backlog
+2. Sprint - fluxo ciclíco (incremental) segue abordagem PDCA (plan, do, check, act)
+	- desenvolvimento de forma iterativa e incremental
+	- reunião de planejamento de sprint
+	- desenv da sprint + daily meeting
+	- revisão da sprint
+	- retrospectiva da sprint
+3. Closure Phase - fluxo linear + entradas e saídas definidas
+	- Prepara o produto desenvolvido para liberação
+	- Envolve tarefas como treinamento, testes gerais e marketing
+
+### FDD - Feature-Driven Development
+- [Reference](https://www.planview.com/resources/articles/fdd-agile/)
+- FDD is related to Scrum, but as its name implies, it’s a feature-focused method (as opposed to a delivery-focused method). Features are a foundational piece of FDD; they’re to FDD what user stories are to Scrum: Small functions that are, most importantly, client-valued.
+
+#### Feature Definition
+- In FDD, each feature is useful and important to the client and results in something tangible to showcase.
+
+#### Basic Activities FDD
+-   Develop overall model
+-   Build feature list
+-   Plan by feature
+-   Design by feature
+-   Build by feature
+
+PS: An overall model shape is formed during the first two steps, while the final three are repeated for each feature.
+
+### Outros Modelos
+- Crystal Clear
+- Adaptive Software Development
+- Dynamic System Development Method
+
+---
+
+## Mineração de Processos - Process Mining
+
+- Process science combines knowledge from information tecnology and knowledge from management sciences to **improve and run operational processes**
+	- Aims at process improvements (time, cost, quality, speed, flexibilidty and reliability)
+- **Business process** is complex and **rely on informaton systems**
+
+### Process Mining Manifesto
+- Process mining techniques are able to extract knowledge from event logs
+- Two main drivers
+	- more and more **events are being recorded**, thus, providing **detailed information about the history of processes**
+	- there is **a need to improve and support business processes** in competitive and rapidly changing environments
+
+### Guiding Principles - Process Mining
+1. Event data should be treated as first-class citizens
+2. Log extraction should be driven by questions
+3. Concurrency, choice and other basic control-flow constructs should be supported
+4. Events should be related to model elements
+5. Models should be treated as purposeful abstractions of reality
+6. Process Mining should be a continuous process
+
+<br>
+
+### Process Mining Definition
+Process mining provides an important bridge between data mining and business process modeling and analysis
+
+```
+Process Mining (ou Mineração de Processos) um conjunto de técnicas quem extraem conhecimento de logs de eventos armazenados em diversos sistemas de informações, afim de descobrir modelos que representam o processo analisado, verificar a conformidade dos eventos em relação ao modelo descoberto, e por fim ampliar e expandir o modelo descoberto tratando informações de gargalos, desempenho e recursos (Garcia et all., 2019)
+```
+
+#### Atividades
+- Initialization
+	1. Planning
+	2. Extraction
+- Analysis iterations
+	3. Data Processing
+	4. Process Mining
+	5. Evaluation (ciclo, pode voltar para o 3)
+- Summarizing
+	6. Summarizing Results
+	7. Process Improvement
+
+<br>
+
+TODO get image slide 14
+
+- **Discovery** - Takes an event log and produces a process model without using any a-priori information
+- **Conformance** - monitoring deviations by comparing model and event log. Conformance checking can be used to check if reality, as recoded in the log, conforms to the model and vice versa
+- **Enhancement** - The ideia is to exted or improve an existing process model using information about the actual process recorded in some event log
+
+TODO get image slide 15
+
+
+- Ciclo de aplicação
+	- identificação
+	- descoberta
+	- análise
+	- (re)desenho
+	- implementação
+	- monitoração e controle
+
+### Perspectivas Process Mining
+#### Perspectiva de controle de fluxo
+- foca na ordenação lógica das atividades
+- busca encontrar boa caracterização de todos os possíveis caminhos de um processo
+
+#### Perspectiva organizacional (resource perspective)
+- Foca em dados relacionados aos atores (pessoas, sistemas, departamentos ou cargos) envolvidos em cada atividade
+- Busca apresentar a rede social envolvida no processo 
+	- para estruturar a organização em termos de unidades organizacionais e cargos.
+
+#### Perspectiva de performance (Time Perspective)
+- foca nas **datas e horários atribuídos ao início e fim de cada atividade** do processo
+- tenta fornecer informações detalhadas da localização dos problemas de performance
+	- usa, para isso, combinação de um modelo de processo ou um modelo minerado – – e os períodos identificados nos eventos de logs.
+
+#### Perspectiva informacional (case perspective)
+- Foca em aspectos específicos de casos individuais gerados na execução de um process
+- Uma **instância ou caso de processo** pode ser **caracterizada** pelo seu **percurso no processo**
+
+### Tools
+- ProM
+- DISCO
+
+### Techniques Process Mining
+- **REMAP Filter**
+	- aplica expressões regulares ou regex
+	- Busca filtrar os dados relevantes presentes nos logs e particularidades de projeto que precisam ser abstraídas.
+- **Markov Chain**
+	- representar o comportamento de um sistema matemático através dos diferentes estados que o sistema pode estar
+	- Considera o espaço amostral dos possíveis estados como discreto, ou seja, o sistema sofre transições de um estado para outro, num conjunto finito ou contável de possíveis estados.
+- **Petri Nets**
+	- o objetivo de permitir modelar e analisar os processos através do formalismo
+	- buscam prevenir ambiguidades, incertezas e contradições, pois possuem **um único ponto de entrada, um único de saída**, e cada **posição** (componente passivo) **representa uma condição**, e cada **transição** (componente ativo) **uma tarefa**
+
+- Para uma interpretação humana do modelo descoberto, pode se traduzir os modelos gerados para uma notação de modelagem de processos, como: 
+	- Redes Petri
+	- BPMN.
+
+### Software Product Line (SPL)
+- É um paradigma para desenvolver software aplicativo (sistemas e produtos de software) usando plataforma e customização em massa
+- **Motivação para adotar abordagem**
+	- Reduction of Development Costs
+	- Enhancement of Quality
+	- Reduction of Time to Market 
+	- Reduction of Maintenance Effort 
+	- Coping with Evolution
+	- Coping with Complexity
+	- Improving Cost Estimation 
+
+#### Software Product Line Engineering (SPLE)
+- Conceitos
+	- **Customização em massa (mass customization)** – corresponde a produção em massa de bens de consumo customizada para atender às necessidades individuais.
+	- **Plataformas (platform)** – qualquer base tecnológica em que se constrói outros processos ou tecnologias.
+		- estrutura comum onde podem ser desenvolvidos e produzidos os derivativos de software.
+
+<br>
+
+- Criação da plataforma
+- Introdução de flexibilidade (Variabilidade)
+	- os artefatos a serem usados pelos diferentes produtos devem ser suficientemente adaptáveis aos diferentes produtos a serem produzidos em linhas de produção
+	- A **variabilidade** é sinônimo de flexibilidade
+	- **Variabilidade** – é um item variável do mundo real ou uma propriedade variável do item.
+	- **Variabilidade objeto** – é uma instância particular da variabilidade
+	- **Ponto de variação** – é a representação da variabilidade no domínio dos artefatos enriquecidos por informação contextualizada
+	- **Variante** – corresponde a representação do objeto da variabilidade dentro do domínio de artefatos. Uma
+das possíveis opções a ser escolhida.
+- Reorganização
+
+<br> 
+
+- **Grupos da SPLE**
+	- Engenharia de Domínio
+		- define a **uniformidade** e **variabilidade** da **linha de produto de software**.
+	- Engenharia de Aplicação
+		- corresponde ao **desenvolvimento** das aplicações Aguardando postagem pelo remetente. e exploração da variabilidade.
+
+<br>
+
+- Desenvolvimento de artefatos – é o **resultado** da **engenharia** de **domínio** ou de aplicação
+- Artefatos de domínio – são os **artefatos criados sob a engenharia de domínio** para **posterior reuso**
+- Artefatos de aplicação – correspondem aos artefatos desenvolvidos para uma linha específica de aplicação
+
+### APLE Methodology
+```
+Aplication Engineering Team (AE) will work in 4-week iteration (sprint). AE team will adopt PL architecture to create the product specific architecture. This product specific architecture is then evaluated in order to define whether or not it satisfies the specific product requirements and quality attributes.
+```
+
+```
+Domain Engineering Team (DE) will also work in 4- week iteration. The main tasks performed by DE team are that the DE team will build the core assets and agile product line architecture
+```
+
+- **Feature catalog** is collection of initial user stories and acceptance tests. These user stories (i.e. ATs) are used as input to perform search operation in the central repository named as Info Base.
+- **SPL backlog** → similar to product backlog. It contains the **requirements for the implementation of core assets** (i.e. non-existing). It may also contain the requirements that move from product backlog to SPL backlog.
+- **Info base** is like a **central repository that contains the reusable artifacts** such as requirements, acceptance tests, source code, etc. The features backlog items (i.e. ATs) are used as input to search items from this repository.
