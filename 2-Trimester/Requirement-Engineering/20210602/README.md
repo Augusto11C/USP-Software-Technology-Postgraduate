@@ -139,8 +139,8 @@ do software (COHN, 2004)
         Eu quero buscar produtos disponíveis na loja
         Para que eu possa comparar seu preço e compra-los
         ```
-	- No “para que” aparecem metas do usuário
-- Deve-se evitar detalhes de implementação e interface
+	- **No “para que” aparecem metas do usuário**
+- **Deve-se evitar detalhes de implementação e interface**
 
 ### Conversas
 - Permitem que os desenvolvedores entendam os detalhes necessários para implementar
@@ -175,11 +175,11 @@ do software (COHN, 2004)
 	- **Capturam como saber se a história foi implementada corretamente**
 	- Perspectiva do PO: especificada por ele
 	- Critério de aceitação **básico**
-		- Não é a descrição da funcionalidade: é um critério (algo a verificar / testar)
-		- Não são casos concretos de teste
+		- **Não é a descrição da funcionalidade: é um critério (algo a verificar / testar)**
+		- **Não são casos concretos de teste**
 - "Ajudam a implementar a história e no direcionamento da conversa"
 - Ajudam a refinar a história
-	- Anotações de condições relativas a comportamento esperado/casos excepcionais
+	- **Anotações de condições relativas a comportamento esperado/casos excepcionais**
 - Anotação de detalhes durante a conversa
 	- Condições para testar a história
 - Originalmente escrita no verso do cartão de história
@@ -187,6 +187,12 @@ do software (COHN, 2004)
 
 ---
 #### Exemplo 1
+> DICA: O que Você quer verificar nesse cenário?
+
+> DICA: acceptance criteria specify conditions under which a user story is fulfilled.
+
+> DICA: Pensar como se fosse uma atividade do usuário, ele pode verificar.
+
 ```
 Como um comprador eu quero pagar a compra com o meu cartão de crédito para que eu possa receber os produtos
 ```
