@@ -295,3 +295,326 @@ Negativos
 - Snowflake Lookup 
 ![](https://github.com/AugustoCalado/USP-Software-Technology-Postgraduate/raw/main/2-Trimester/Software-Engineering-for-Large-Software-Systems/20210601/resources/snowflake-lookup.png)
 
+### Metadados
+Dados sobre os dados
+-“Sombra” de dados
+-“DNA” dos dados
+-Em períodos longos de tempo
+	- Significado dos dados pode se alterar
+	- Controle do histórico de alterações
+-Dados que descrevem
+	- Estrutura dos dados
+	- Algoritmos de extração/ sumarização
+	- Mapeamento ambiente operacional ---> DW (fontes de informação)
+- Origem/Destino dos dados
+
+### ETL
+- **Extrair Dados**
+	- Data Profiling: análise técnica dos dados para descrever seu conteúdo, consistência e estrutura
+	- Change Data Capture : identificar os dados que sofreram alterações desde a última carga
+	- Extract: eventuais descompressão e decriptação dos dados
+- **Limpar e processar dados**
+	- Data Cleansing: corrigir dados “defeituosos”, descrição de erros, métricas de QD
+	- Deduplication: eliminar replicações do mesmo dado
+	- considerações
+		- Mesmos dados com nomes diferentes
+		- dados diferentes com mesmo nome
+		- valores impossíveis
+- **Entregar os dados**
+	- Gerenciador de Dimensões de Modificação Lenta
+	- Gerador de Surrogate Keys
+
+- Tipos de carga 
+	- Carga inicial
+	- Cargas periódicas de dados
+
+- ETL Fontes de dados Externos
+	- Jornais/revistas
+	- Boletins informativos
+	- Relatórios
+	- Características
+		- Periodicidade não é fixa
+		- Formato variável
+
+### DW - Passos para o Projeto
+- Especificação do DW
+- Projeto da Matriz de barramento
+- Projeto da tabela fato
+- Definição dos fatos
+- Granularidade da tabela fato
+- Definição das dimensões
+- Dimensões de Modf. Lenta
+- Amplitude tempo
+- Intervalo de Extração
+
+## Big Data
+- Dados contêm informação/conhecimento significativo e que pelo seu custo e tempo de obtenção merecem tratamento adequado
+- Compreensão: análise, captura, tratamento, armazenamento, compartilhamento, consulta e visualização
+- Problema: tomar grandes e complexos conjuntos de dados que os aplicativos tradicionais não consigam processar em tempo adequado
+
+> When data sets do not fit in main memory (in core), or when they do not fit even on local disk, the most common solution is to acquirer more resources
+
+- Os dados são “big” quando seu tamanho, variedade e velocidade de geração tornam-se elementos ativos do problema
+
+> Big data consists of extensive datasets, primarily in the characteristics of volume, variety, velocity, and/or variability - that require a scalable architecture for efficient storage, manipulation, and analysis
+
+> The Big Data paradigm consists of the distribution of data systems acreoss horizontally coupled, independent resources to achieve the scalability needed for the efficient processing of extensive datasets
+
+> Big Data is a term applied to data sets whose size is beyond the ability of commonly used software tools to capture, manage, and process the data within a tolerable elapsed time. Big Data sizes are a constantly moving target currently ranging from a few dozen terabytes to many petabytes of data in a single data set.
+
+- Dados
+- Volume, variedade, velocidade, variabilidade, veracidade, visualização, valor
+
+### Os V's do Big Data
+- Volume
+- Variedade
+	-  Múltiplos repositórios de origem
+	- Múltiplos formatos  Estruturados, Não Estruturados, Semi Estruturados
+	-  Textos, vídeos, redes sociais, tabelas, imagens, sensores
+- Velocidade
+	- Geração de dados cada vez mais acelerada
+	- Necessidade de processamento mais rápido
+- Veracidade
+	- Origem conhecida e confiável
+	- Confiança no significado e no conteúdo dos dados
+	- Qualidade dos dados: completeza, acurácia
+- Valor
+	- Grau de utilidade
+- Variabilidade
+	- Alteração ou inserção de novos significados dos dados
+- Visualização
+	- utilizar a formas gráficas mais úteis e acessíveis
+- Validade/Volatilidade
+	- qual o período de utilidade dos dados
+
+### Aplicações
+- Instituições financeiras: entender e aumentar satisfação de clientes; minimizar riscos e fraudes
+- Governo: gestão de serviços públicos, questões de defesa nacional, . . . .
+- Saúde: análise de registros de pacientes para predição/reação a eventos clínicos ---> tratamentos melhores e mais rápidos
+- Comércio: Análise de Fidelidade, Análise da Concorrência e de Risco de Clientes (Pão de Açucar, Vivo, Amazon, . . . .)
+- Análise do clima: dados de centrais meteorológicas
+- Manutenção de equipamentos: previsão de panes 
+- Educação: identificar alunos com dificuldades, implementar melhores sistemas de avaliação
+
+### Camadas da Arquitetura Big Data
+1. Obtenção dos dados
+	- Obtenção de dados estruturados, semiestruturados e não estruturados  --> Variedade
+	- Formatos variáveis
+	- Velocidade
+	- Frequência de obtenção dos dados: sob demanda, contínua, real-time
+2. Armazenamento dos Dados
+	- Armazenar e/ou processar esses dados -> cluster master/slave
+3. Análise dos dados
+	- Utilizar ferramentas apropriadas (**data mining**, IA, estatśtica)
+	- Gerar os documentos necessários
+	- entregar aos profissionais adequados
+	- analisar: métodos descritivos, diagnóstico, preditivo, prescritivo
+4. Consumo dos Resultados da Análise
+	- Humanos ou aplicativos
+	- Utilização adequada desses resultados `->` tomada de decisões e de ações `->` visa melhorar a tomada de decisões nos negócios
+
+A. Integração dos dados
+- Definir as ferramentas de software para as camadas lógicas
+- Definir os tipos de bancos de dados a serem formados
+
+B. Governança de Big Data
+- Gerenciar grandes volumes de dados
+- Definir as políticas de uso, armazenamento e remoção de dados
+
+C. Qualidade de Serviços
+- Disponibilizar os dados em tempos adequados
+- Verificar a correção e precisão dos dados
+- Respeitar a política de privacidade
+
+### Big Data Analítico - Técnicas
+- Processo de examinar grandes conjuntos de dados para obter padrões, correlações, tendências “ocultas"
+- Ferramentas: data mining, text analytics, análise estatística e preditiva
+- Aprendizado de máquina: uso de algoritmos para reconhecer padrões complexos 
+- Processamento de Linguagem Natural - IA e linguística: algoritmos para analisar a linguagem humana 
+- Reconhecimento de Padrões: técnicas de aprendizado de máquina
+
+### Big Data Analítico - Tipos de análise
+- descritiva
+	- identificar e avaliar os atributos
+	- estimar a contribuição dos atributos no resultado
+- diagnóstica
+	- Extrair padrões a partir dos dados
+- Preditiva
+	- Determinar a probabilidade de possíveis resultados
+- Prescritiva
+	- Ações indicadas para obter os resultados desejados
+
+### Hadoop
+- Hadoop: software open source coordenado pela Apache Software Foundation. 
+- Armazenamento e processamento distribuído de grandes conjuntos de dados em clusters de computadores “comuns” 
+- Framework para ambientes distribuídos usado principalmente para análise de grandes volumes de dados 
+- HDFS (Hadoop Distributed File System) Armazenamento de dados confiável (redundante e com alta disponibilidade) 
+- MapReduce: Computação paralela de alto desempenho Processamento de conjuntos de dados, reduzindo o volume da saída de dados 
+- Common Utilities: conjunto de bibliotecas e utilitários comuns que auxiliam outros módulos Hadoop
+
+#### Serviços Principais
+- Map Reduce (Computação distribuído)
+	- Dados são divididos em porções 
+	- Porções são processadas em paralelo 
+	- Geram resultados intermediários 
+	- Resultado final agrega tais resultados intermediários
+- HDFS (Armazenamento Distribuído)
+	- Suporta qualquer tipo de dados 
+	- Gerencia o conjunto de servidores 
+	- Armazenamento de grandes conjuntos de dados de forma distribuída
+- Common Utilities
+
+### Fato vs Mito
+- Mito: Hadoop tem a preocupação exclusiva com grandes volumes de dados
+	- Fato: Hadoop também tem como foco a diversidade de dados - pode gerenciar o acesso a qualquer tipo de dados, armazenando-os no HDFS
+- Mito: o HDFS é o gerenciador de dados do Hadoop 
+	- Fato: O HDFS é um sistema de arquivos e não um gerenciador de bases de dados - podem ser usados como gerenciadores o Hbase ou o Hive
+- Mito: O MapReduce faz parte do HDFS 
+	- Fato: HDFS e MapReduce fazem uma boa parceria, mas um pode ser usado sem o outro
+- Mito: Hadoop é uma alternativa/substituto do Data Warehouse 
+	- Fato: Hadoop pode auxiliar um Data Warehouse, mas não substituir
+
+### DW vs Big Data
+```
+DW: Arquitetura para armazenamento e consulta de dados
+BgD: Tecnologia para tratar e consultar grandes conjuntos de dados
+
+DW: Processamento centralizado 
+BgD: Processamento distribuído
+
+DW e BgD: Análise de questões importantes das atividades da empresa / organização
+
+DW: Dados estruturados 
+BgD: Dados estruturados e semiestruturados 
+
+DW: Bases de dados relacionais 
+BgD: Bases de dados relacionais e NoSQL
+``` 
+
+## Data Lake
+> Data Lake é um repositório enorme que acolhe todos os tipos de dados em seus formatos nativos, sendo que, em algum momento será utilizado por alguém da organização
+
+### Esquema On Write
+- A estrutura dos dados deve ser totalmente definida antes da escrita de qualquer dado: tabelas, colunas, chaves, ...
+- Inclui tipos de dados e tamanhos
+- Estrutura otimizada para consultas mais rápidas
+- Dificuldade de se implementar mudanças nessa estrutura
+
+### Esqema On Read
+- Não é necessário definir a priori a estrutura dos dados
+- **O esquema é definido quando os dados são lidos, mas não quando são armazenados** 
+- No momento da leitura define-se quais serão os dados necessários a cada objetivo 
+- Dados não são alterados ou descartados no momento do armazenamento 
+- Sem o ETL, os dados devem ser tratados no momento da leitura `->` consultas mais lentas
+
+### Riscos do Data Lake
+- Armazenar dados sem uso (“one way”) 
+- Pode se tornar um grande “acumulador” de dados 
+- Não há relacionamento entre os dados: dificulta a etapa de análise 
+- Dados úteis podem ficar ocultos / escondidos 
+- Eventualmente o usuário deve ser expert nos dados
+- Dificuldade em se ter boa qualidade dos dados 
+- Sem metadados pode não ser possível um uso adequado dos dados 
+- Questões de segurança: os dados devem ter restrições de acesso que o Data Lake não implementa 
+- Necessidade de grande capacidade de armazenamento
+
+### Transformar o Data Lake na “Mina de Ouro”
+ - Hadoop 
+ - Amazon Web Services (AWS) 
+ - Microsoft Azure 
+ - Google Cloud Platform
+
+### DW x Data Lake
+```
+DW: Arquitetura para armazenamento e consulta de dados
+DL: Tecnologia para tratar e consultar grandes conjuntos de dados
+
+DW: Processamento centralizado 
+DL: Processamento distribuído
+
+DW e DL: Análise de questões importantes das atividades da empresa / organização
+
+DW: Dados estruturados 
+DL: Dados estruturados e semiestruturados 
+
+DW: Esquema de dados de difícil alteração
+DL: Sem esquema
+
+DW: Consistência alta
+DL: Consistência baixa
+``` 
+
+## Data Mining
+- Aplicação de técnicas de descoberta do conhecimento  Estatística e Inteligência Artificia para identificação de regras, padrões, restrições e distinções (outliers).
+- Extração não trivial de conhecimento implícito, previamente desconhecido e potencialmente útil
+- Exploração e análise por meios automáticos / semiautomáticos de gdes qdades de dados para obter padrões com significado
+- Ferramenta utilizada para descobrir novas corrrelações, padrões e tendências entre as informações de uma empresa, através da análise de grandes quantidades de dados armazenados em Data Warehouse usando técnicas de reconhecimento de padrões, estatísticas e matemáticas.”
+
+### Desafios 
+- Escalabilidade: capacidade de processar volumes crescentes de dados
+- Dimensionalidade: gde nº de atributos e/ou variáveis 
+- Dados complexos e heterogêneos 
+- Qualidade dos dados
+- Preservação da privacidade/propriedade dos dados
+
+### Paths
+- `[[treinar][testar]]`
+	- Modelo
+		- Resultados
+
+### 80/20
+- Princípio de pareto: 80% da informação útil está localizada em 20% dos dados
+
+### KDD-Knowledge Discovery in Database
+- KDD: processo completo de aquisição de conhecimento 
+	- Tarefa multidisciplinar
+	- Técnicas utilizadas em várias áreas  BD, DW, IA, Estatística 
+- Data Mining: componente do processo
+
+### Algoritmos de Data Mining
+- Predição
+	- Identificar/predizer classe/ valor de novos dados a partir de dados conhecidos 
+	- Treinamento, teste, avaliação e classificação 
+		- Classificação 
+		- Regressão
+	- Classes previamente determinadas
+- Descrição
+	- Identificação de padrões de comportamento comuns
+	- Clustering 
+	- Sumarização 
+	- Regras de Associação
+	- Caracterização
+	- Discriminação
+	- Evolução /Análises Sequenciais
+	- Desvio
+- Predição -> Classificação
+	- Finalidade: predizer o comportamento 
+	- Os atributos são divididos em classes/categorias já pré-definidas
+	- Objetivo: obter uma função que mapeie um valor no conjunto de classes
+	- Valores discretos
+	- Métodos: mínima distância, hiperparalelepípedos, árvores de decisão, vizinhos mais próximos, redes neurais
+- Predição -> Regressão
+	- Similar à classificação, porém com valores contínuos 
+	- Também visa predizer o comportamento / valores
+	- Prever valor de gasto de clientes, com base no sexo, faixa de renda, ...
+- Clustering
+- Descrição -> Clustering
+	- Os grupos devem ser formados a partir de propriedades comuns
+	- Novos elementos são inseridos nos grupos
+	- Agrupar objetos que possuem alto grau de similaridade em classes
+	- Exemplos: agrupar clientes com comportamentos de compra similares, agrupar documentos relacionados, análise de cesta de mercado
+- Sumarização
+	- Descrição compacta para um subconjunto de dado
+	- Ex.: resumos mensais variados
+- Regras de Associação
+	- Detecção de associações / conexões entre objetos 
+	- Se X ocorre, então Y também ocorre 
+	- Regra de associação: buscar itens que ocorrem simultaneamente
+- Evolução / Análise Sequencial
+	- Inclusão do fator tempo
+	- Detecção e avaliação na evolução dos dados ao longo do tempo 
+	- Ex.: obter padrão de evolução de vendas em 12 meses
+- Desvios / Anomalias / Outliers
+	- Identificação de elementos do conjunto de dados cujos valores diferem de um padrão ou da maioria dos valores
+	- Comportamento “normal”: geralmente fornecido com base em alguma suposição (média, crescimentos lineares, ...) 
+	- Ex.: desvio em relação a vendas médias ou com relação à altura média das pessoas
