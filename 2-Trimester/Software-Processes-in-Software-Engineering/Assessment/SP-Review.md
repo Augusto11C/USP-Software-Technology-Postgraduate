@@ -5,7 +5,7 @@
   * [Melhoria de Processos de Software - Process Improviment](#melhoria-de-processos-de-software---process-improviment)
     + [SPI - Software Process Improvement](#spi---software-process-improvement)
     + [IDEAL MODEL](#ideal-model)
-    + [[SPI Model- CMMI](https://github.com/AugustoCalado/USP-Software-Technology-Postgraduate/tree/main/2-Trimester/Software-Processes-in-Software-Engineering/20210524#spi-model--cmmi)](#-spi-model--cmmi--https---githubcom-augustocalado-usp-software-technology-postgraduate-tree-main-2-trimester-software-processes-in-software-engineering-20210524-spi-model--cmmi-)
+    + [SPI Model- CMMI](#-spi-model--cmmi--https---githubcom-augustocalado-usp-software-technology-postgraduate-tree-main-2-trimester-software-processes-in-software-engineering-20210524-spi-model--cmmi-)
   * [Modelos de Processos de Software](#modelos-de-processos-de-software)
     + [Orientação dos Modelos Descritivos e Prescritivos](#orienta--o-dos-modelos-descritivos-e-prescritivos)
     + [Exemplos de Modelos de Processos Descritivos](#exemplos-de-modelos-de-processos-descritivos)
