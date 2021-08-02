@@ -1,4 +1,4 @@
-# Qualidade de Software - Introdução
+# Aula 1 - 20210802 - Introdução
 
 ## Descrição da Disciplina
 Capacitar os alunos com os conceitos de qualidade de processo e produto de software, e as
