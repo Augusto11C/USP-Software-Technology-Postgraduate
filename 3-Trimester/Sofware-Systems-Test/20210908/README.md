@@ -82,7 +82,39 @@ Suponha um módulo bem simples de serviços financeiros, cujo ponto de entrada �
 	- os objetos de nível mais baixo tendem a ser menos testados.
 	- a implementação de stubs parametrizados inferiores muitas vezes é pouco produtiva.
 
+### Estratégia Bottom-up
+- Implementação de objetos no nível inferior da árvore de dependências, com os colaboradores imediatamente superiores simulados por direcionadores (drivers)
+- Intercalar a implementação e os testes de unidade e de integração seguindo as dependências: da menor dependência para a maior dependência, isto é, das folhas para a(s) raiz(es).
 
+![](./resources/bottom-up-integration-test.png)
+![](./resources/bottom-up-integration-test-2.png)
+
+**vantagens**
+- Tendência a um melhor isolamento de falhas. 
+- As “folhas” são mais frequentemente testadas.
+
+**desvantagens**
+- Ausência, ou pouco emprego, da automatização dos testes pode implicar o desperdício de drivers.
+- No caso de dependências complexas, os objetos do topo podem ficar ‘engessados’.
+- Maior dificuldade relativa com respeito ao top down para a obtenção de versões intermediárias.
+
+
+## Noções Fundamentais da Integração Interna
+
+- Objetivo
+  - Demonstrar a estabilidade do comportamento do software em desenvolvimento, adicionando os componentes necessários para realizar uma colaboração específica de objetos.
+
+- Contexto
+  - Exercita as interfaces entre os elementos de uma colaboração.
+  - A ordem da integração normalmente segue as restrições dos cenários – ou caminhos - de execução: descrições de como grupos de objetos colaboram para efetuar determinados comportamentos esperados do SUT.
+  - Escolha da estratégia de integração em cada colaboração.
+
+-  Por que apresentamos inicialmente as estratégias de integração **sem os métodos dos objetos**?
+   -  Para o entendimento geral das estratégias, sejam elas aplicadas à orientação por objetos ou a outro enfoque.
+   -  Porque no início de uma iteração não se tem normalmente uma ideia clara dos métodos que serão implementados, mas tem-se alguma ideia das prioridades dos objetos.
+
+- Por que nos preocupamos em denotar o caso de dependência compartilhada, mesmo se o enfoque do curso é a OO    (invocação de método)?
+  - Porque ele permite apreender as implicações do processamento, tanto no caso de execução sequencial, como no caso de execução concorrente. 
 
 ---
 
