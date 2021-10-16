@@ -21,7 +21,7 @@
 ### DDD - Projeto Estratégico - Contexto Delimitado (Bounded Contexts)
 - idealmente, cada Subdomínio é mapeado em um **Contexto Delimitado**.
 - cada Contexto Delimitado:
-    - Cada Contexto Delimitado é um modelo de solução definido numa linguagem em torno de uma finalidade específica
+    - é um **modelo de solução** definido numa linguagem em torno de uma **finalidade específica**
     - **define** uma **fronteira conceitual** em um Domínio, definindo/criando um **Espaço de Solução** do sistema que **apoia o domínio do negócio** em questão.
     - tem sua **própria Linguagem Onipresente** que fundamenta e orienta um modelo de design.
     - fornece uma **implementação técnica** que reforça as fronteiras do espaço de solução, **definindo os modelos de design deste espaço**.
@@ -45,7 +45,6 @@
 ![](./resources/mapa-contextos.png)
 
 ### Alguns Problemas nas Relações Entre Linguagens Onipresente
-
 - Conceitos duplicados: elementos de dois modelos distintos representam o mesmo conceito. 
     - Problemas de uso e de sincronização em atualizações. 
     - Exemplo: “Conta do beneficiário direto” e “Conta do segurado” em um contexto de seguridade social.
