@@ -10,13 +10,12 @@
 
 - Ambiente onde a casa está inserido afeta a experiencia de seu uso
 
-
 - Requisito funcional: Aquilo que o software deve fazer
-- Requisito não funcional: 
+- Requisito não funcional: são os requisitos relacionados ao uso da aplicação em termos de desempenho, usabilidade, confiabilidade, segurança, disponibilidade, manutenção e tecnologias envolvidas
 
 ## Arquitetura de Software
 - Definição I: Forma, elementos, fundamentação (o "por quê" da forma o motivo)
-- Definição II: Conceitos ou propriedades fundamentais de um sistema em seu ambiente incorporado em seus elementos,relacionamentos e nos **princípios de seu design** e evolução” (ISO/IEC/IEEE, 2011).
+- Definição II: Conceitos ou propriedades fundamentais de um sistema em seu ambiente incorporados em seus elementos,relacionamentos e os **princípios de seu design** e evolução” (ISO/IEC/IEEE, 2011).
 
 <br>
 
@@ -38,34 +37,40 @@
     - Terminologia neutra elementos
         - partes que constituem um sistema
 
-- Estrutura de um sistema
+- **Estrutura de um sistema**
     - Elementos que constituem o sistema e o relacionamento entre eles
 
-- Estrutura estática de um sistema
+- **Estrutura estática de um sistema**
     - Define seus elementos internos e sua disposição em "design-time"
 
-- Estrutura dinâmica
+- **Estrutura dinâmica**
     - Elementos ("runtime") e suas iterações
         - Como o sistema trabalho, que acontece "runtime" e como responde aos estímulos externos ou internos
       - **exemplo**: fluxo de informações entre elementos
-
 ## Propriedades Externas
 - Comportamento externamente visível
-    - iterações funcionais entre o sistema e o seu ambiente
-    - fluxo de informação de entrada e saída, como o sistema responde aos estímulos externos, o contrato publicado ou API que a arquitetura tem com o mundo exterior
-    - O comportamento externo deve ser modelado observando o sistema como caixa preta
+    - iterações funcionais entre o sistema e o seu ambiente.
+    - fluxo de informação de entrada e saída, como o sistema responde aos estímulos externos, o contrato publicado ou API que a arquitetura tem com o mundo exterior.
+    - O comportamento externo deve ser modelado observando o sistema como caixa preta.
 - Propriedade de qualidade
-    - Propriedades não funcionais, externas
+    - Propriedades não funcionais, externas e visíveis
+        - Desempenho, segurança, outros.
+        - Como o sistema se comporta do ponto de vista de um observador externo.
 
 
 ## Princípio de Design e Evolução
-- Declaração fundamental de convicção, abordagem ou intenção que orienta a definição de sua arquitetura
+- Declaração fundamental de convicção, abordagem ou intenção que orienta a definição de sua arquitetura.
 
-- Uma forma de estabelecer uma estrutura de tomada de decisão para um arquitetura consistente e bem estruturada
+- Uma forma de estabelecer uma estrutura de tomada de decisão para um arquitetura consistente e bem estruturada.
 
 ## Elementos Arquiteturais
-- é o elemento ou elementos básicos que se utilizam para construir o sistema
-- a natureza do elemento arquitetural depende do tipo de sistema e de seu contexto
-    - Bibliotecas de programas
+- é o elemento ou elementos básicos que se **utilizam para construir o sistema**.
 
-  - Deve possuir um conjunto de atributos principais
+- a natureza do elemento arquitetural depende do tipo de sistema e de seu contexto.
+    - Bibliotecas de programas, subsistemas, unidades distribuídas aplicações.
+
+- Deve possuir um conjunto de atributos principais
+    - Conjunto de responsabilidades
+    - Restrições
+    - Interfaces
+    - Define os serviços que oferece aos outros elementos arquiteturais
