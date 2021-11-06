@@ -19,8 +19,9 @@
     - Serviços Hospitalares
     - Suprimentos
       - remédios
-      - equipamentos
-    - Planejamento/Controle/Acompanhamento (Pandemia)
+      - equipamentos epis
+      - Máquinas (raio-x, ultrasom)
+    - Monitorimento Pandemia (Planejamento/Controle/Acompanhamento (Pandemia))
 
     B. Para cada Contexto Delimitado, **identificar seus conceitos chave** (breve descrição).
 
