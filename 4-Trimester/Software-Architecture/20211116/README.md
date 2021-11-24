@@ -16,3 +16,18 @@
 3. Classifique os agentes do cenário de negócio em níveis operacional, gerencial e estratégico
 4. Para cada agente do negócio, identifique e liste os processos de negócio em que a agente participa
 5. Para cada agente em um processo de negócio, identifique e liste as atividades onde o agente participa e os artefatos consome e produz
+
+
+
+
+## Teórico vs Aplicação
+- Modelo negócio
+- Modelo computacional
+- Modelo tecnológico
+- Modelo engenharia
+- Modelo infraestrutura
+
+- forma de ver arquitetura vs abstração
+    - determinar produto de software a partir de alguns elements
+
+- abstração capacidade do arquiteto de ver a mesma coisa em diferente níveis de detalhes
