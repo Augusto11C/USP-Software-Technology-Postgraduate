@@ -40,4 +40,19 @@
 - Heterogeneida
 - Mobilidade
 - Extensibilidade
-- 
+
+### Processo de Definição da Arquitetura
+- deve ser orientado aos interesses dos stakeholders
+- deve encorajar a comunicação efetiva das decisões e princípios arquiteturais e a solução dpara os stakeholders
+- deve garantir, de forma permanente, que as decises e principios arquiteturais sejam respeitados durante o ciclo de vida - desde a concepção e implantação (e posteriores evoluções)
+- deve ser estruturada - incluir a série de uma ou mais etapas, objetivos de cada etapa, inputs e outputs das entradas
+- deve ser pragmática - considerar questões relativas do mundo real (cronograma apertado, orçamento, competências tecnicas, etc)
+- deve ser flexivel - adaptado a circunstancias particulares (utilizar um toolkit e frameworks)
+- deve ser tecnologia-neutra - não deve impor que a solução seja baseada em torno de qualquer tecnologia especifica
+- deve ser alinhado com boas práticas de engenharia de software e gerenciamento de qualidade
+
+![](resource/processo-definicao-arquitetura.png)
+- modelo tri-pics
+- arquitetura conecta a especificação com o projeto, permitindo o intercambio necessário para satisfazer a demanda tanto de requisitos quanto de arquitetura. Dessa forma, a definição da arquiteutra fica entre a fase de definição de requisitos e projeto codificação e teste de software
+
+- ![](resource/processo-definicao-arquitetura-2.png)
