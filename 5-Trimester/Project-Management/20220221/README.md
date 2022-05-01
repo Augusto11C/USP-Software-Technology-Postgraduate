@@ -40,7 +40,7 @@
 - Apoio executivo
 - Requisitos claramente estabelecidos
 - Planejamento adequado
-- Expectativas tealistas
+- Expectativas realistas
 - Marcos de projetos menores
 - Equipe competente
 - Visão e objetivos claros

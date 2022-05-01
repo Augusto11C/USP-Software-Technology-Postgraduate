@@ -204,4 +204,4 @@ propostas e a aplicação de critérios de avaliação para selecionar o fornece
 
 O time de segurança verifica se haverá o compartilhamento de informações confidenciais com os fornecedores.
 
-Verifica o cu
+Verifica o custo
